@@ -1,0 +1,60 @@
+editor: source
+
+execute:
+  cache: false
+  freeze: auto
+
+project:
+  type: website
+  output-dir: docs
+  render: [index.qmd]
+  post-render: "R/_post-render.R"
+
+title: "Climate change and the availability of wild food plants in the semiarid"
+author: "A. Magalhães & D. Vartanian"
+keyword: >
+  Biological sciences. Health sciences. Environmental sciences.
+  Interdisciplinary fields. Ethnobiology. Nutrition. Climate change.
+  Global warming. Beta diversity. Habitat suitability.Food and nutrition.
+  Semiarid. Brazil. Data science. Data visualization. Spatial data science.
+  Spatial-temporal analysis. Geocomputing. QGIS. R.
+institute: "University of São Paulo"
+date: 2024-10-23
+date-format: "YYYY-MM-DD"
+title-slide-attributes:
+  data-background-color: "white"
+
+website:
+  open-graph: true
+  favicon: images/sustentarea-symbol.png
+  repo-url: https://github.com/danielvartan/amanda/
+  site-url: https://danielvartan.github.io/amanda/
+  issue-url: https://github.com/danielvartan/amanda/issues/
+  repo-branch: main
+
+format:
+  revealjs:
+    locale: en
+    lang: en-us
+    code-link: true
+    link-external-newwindow: true
+    tbl-cap-location: top
+    callout-appearance: simple
+    csl: csl/english-apa-author-date.csl
+    preview-links: false
+    controls: true
+    controls-layout: bottom-right
+    chalkboard: true
+    auto-stretch: true
+    fig-align: center
+    theme: [default, scss/styles.scss]
+    pdf-max-pages-per-slide: 1
+    template-partials:
+      - html/title-slide.html
+    menu:
+      titleSelector: [h1 h2]
+      useTextContentForMissingTitles: false
+      hideMissingTitles: false
+
+google-scholar: false
+bibliography: references.bib
