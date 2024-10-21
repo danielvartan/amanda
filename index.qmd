@@ -9,7 +9,7 @@ source(here::here("R/quarto-setup.R"))
 
 :::: {.columns}
 ::: {.column style="width: 70%;"}
-In this presentation, we will delve into the insightful article by Silva et al. ([2024](https://doi.org/10.1007/s10113-024-02250-3)) titled _Climate change may alter the availability of wild food plants in the Brazilian semiarid_.  This research opens up important discussions about the future of essential resources under the pressures of climate change.
+In this presentation, we will delve into the insightful article by Silva et al. ([2024](https://doi.org/10.1007/s10113-024-02250-3)) titled: _Climate change may alter the availability of wild food plants in the Brazilian semiarid_.  This research opens up important discussions about the future of essential resources under the pressures of climate change.
 
 We will cover the following topics:
 
@@ -58,7 +58,17 @@ URL: http://lattes.cnpq.br/8997021071561903
 
 :::: {.columns}
 ::: {.column style="width: 50%; font-size: 0.9em; padding-top: 0px;"}
-Wild food plants (WFPs) are defined as **plant species that grow spontaneously in natural or seminatural ecosystems**, have self-sustaining populations, and **are collected for human consumption** as food or drink in rural and urban environments [@silva2024].
+Wild food plants (WFPs) are defined as **plant species that grow spontaneously in natural or seminatural ecosystems**, have self-sustaining populations, and **are collected for human consumption** as food or drink in rural and urban environments [@heywood1999; @reyes-garcia2015; @shackleton2022].
+
+<br>
+
+**A** [Goiaba-do-morro](https://identify.plantnet.org/pt-br/k-world-flora/species/Psidium%20guineense%20Sw./data) (*Psidium guineense*).
+
+**B** [Jenipapo](https://identify.plantnet.org/pt-br/k-world-flora/species/Genipa%20americana%20L./data) (*American genipa*).
+
+**C** [Taioba/Costela-de-adão/Orelha-de-elefante](https://pt.wikipedia.org/wiki/Xanthosoma_sagittifolium) (*Xanthosoma sagittifolium*).
+
+**D** [Cará-branco](https://identify.plantnet.org/pt-br/k-world-flora/species/Xanthosoma%20sagittifolium%20(L.)%20Schott/data) (*Dioscorea trifida*). 
 :::
 
 ::: {.column style="width: 50%; padding-top: 0px;"}
@@ -67,45 +77,11 @@ Wild food plants (WFPs) are defined as **plant species that grow spontaneously i
 ::::
 
 ::: footer
-[Photo by @medeiros2021] 
+[Photo by @medeiros2021 (Murici, Alagoas, Brazil)] 
 :::
 
 ::: {.notes}
 *Fig 3.* Wild food plants with greater potential for popularization, considering the average of the attributes accessed according to the perception of the residents of the rural settlement Dom Helder Câmara, in the municipality of Murici, state of Alagoas, northeastern Brazil. (**A**) *Psidium guineense* Sw.; (**B**) *American genipa* L.; (**C**) *Xanthosoma sagittifolium* (L.) Schott, and (**D**) *Dioscorea trifida* L.f. [@medeiros2021].
-:::
-
-## Question {.smaller}
-
-Climate change poses a significant threat to the Brazilian semiarid.
-
-[...] the region has a high diversity of WFPs that are extracted by local populations for economic and nutritional purposes.
-
-Given these characteristics, the Brazilian semiarid serves as a model region for assessing WFP availability in the context of climate change.
-
-**What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?**
-
-::: footer
-[@silva2024]
-:::
-
-::: {.notes}
-:::
-
-## Objective
-
-This study aimed to **estimate the future availability** of nutritionally and economically important WFP species in the Brazilian semiarid and **determine their spatiotemporal variation in future scenarios of climate change**.
-
-::: footer
-[@silva2024]
-:::
-
-::: {.notes}
-Here, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios [@silva2024].
-:::
-
-# Methods
-
-::: {.notes}
 :::
 
 ## The Brazilian semiarid {.smaller}
@@ -118,6 +94,94 @@ Here, our objective was to determine the spatiotemporal dynamics of WFPs in the 
 
 ::: {.notes}
 **Fig. 1** Geographic location of the Brazilian semiarid region in the Neotropical realm, with limits highlighted in black on a phytogeographic map. The relative area (%) represents the proportion of each domain in relation to the total area of the semiarid region. Sources: Brazilian Institute of Geography and Statistics, Biomes of Brazil, 1:250,000, 2019, Development Superintendency of the North- east (SUDENE), Delimitation of the Semiarid, 2017 [@silva2024].
+
+A more precise definition is given by the Köppen climate classification, which treats steppe climates (BSh and BSk) as **intermediates between desert climates (BW) and humid climates** (A, C, D) in ecological characteristics and agricultural potential <https://en.wikipedia.org/wiki/Semi-arid_climate>.
+:::
+
+## Shared Socioeconomic Pathways {.smaller}
+
+The SSPs are based on **five narratives** describing alternative socio-economic developments. Their main purpose is to provide an internally consistent logic of the main causal relationships, including a description of trends that are traditionally difficult to capture by models [@riahi2017].
+
+:::: {.columns}
+::: {.column style="width: 50%; padding-top: 25px;"}
+[SSP1]{style="color: #4A6898;"}: Sustainability – Taking the Green Road
+: *Low challenges to mitigation and adaptation*.
+
+[SSP2]{style="color: #AC3407;"}: Middle of the Road
+: *Medium challenges to mitigation and adaptation*.
+
+[SSP3]{style="color: #956A38;"}: Regional Rivalry – A Rocky Road
+: *High challenges to mitigation and adaptation*.
+:::
+
+::: {.column style="width: 50%; padding-top: 25px;"}
+[SSP4]{style="color: #2B8163;"}: Inequality – A Road Divided
+: *Low challenges to mitigation, high challenges to adaptation*.
+
+[SSP5]{style="color: #6D3E91;"}: Fossil-fueled Development ― Taking the Highway
+: *High challenges to mitigation, low challenges to adaptation*.
+:::
+::::
+
+::: footer
+(Summary of SSP narratives by @riahi2017[p. 157, Table 2])
+:::
+
+::: {.notes}
+- Color palette 1: [Viridis Inferno (8 categories)](https://waldyrious.net/viridis-palette-generator/).
+
+- Color palette 2: [Our World in Data](https://ourworldindata.org/explorers/ipcc-scenarios?hideControls=true&Metric=Temperature+increase&Rate=Per+capita&Region=Global&country=SSP1+-+Baseline~SSP2+-+Baseline~SSP3+-+Baseline~SSP4+-+Baseline~SSP5+-+Baseline).
+:::
+
+## Shared Socioeconomic Pathways {.smaller}
+
+<iframe src="https://ourworldindata.org/explorers/ipcc-scenarios?Metric=Temperature+increase&Rate=Per+capita&Region=Global&country=SSP1+-+Baseline~SSP2+-+Baseline~SSP3+-+Baseline~SSP4+-+Baseline~SSP5+-+Baseline&hideControls=true&tab=chart" loading="lazy" style="width: 100%; height: 575px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+::: footer
+(Artwork by [Our World in Data using](https://ourworldindata.org/explorers/ipcc-scenarios?Metric=Temperature+increase&Rate=Per+capita&Region=Global&country=SSP1+-+Baseline~SSP2+-+Baseline~SSP3+-+Baseline~SSP4+-+Baseline~SSP5+-+Baseline) using data from @riahi2017)
+:::
+
+::: {.notes}
+See also @ipcc2021[p. 571, fig. 4.2].
+:::
+
+## Climate change and WFPs {.smaller}
+
+Climate change (CC) pose risks to human health and well-being and can have serious consequences for food production worldwide.
+
+Climate change poses a significant threat to the Brazilian semiarid.
+
+[...] the region has a high diversity of WFPs that are extracted by local populations for economic and nutritional purposes.
+
+Given these characteristics, the Brazilian semiarid serves as a model region for assessing WFP availability in the context of climate change.
+
+![](images/meme-this-is-fine.gif){fig-align="center" style="width: 100%; padding-top: 10px; padding-bottom: 25px;"}
+
+::: footer
+[@silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Question
+
+**[What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?]{style="color: #006909;"}**
+
+This study aimed to **estimate the future availability** of nutritionally and economically important WFP species in the Brazilian semiarid and **determine their spatiotemporal variation in future scenarios of climate change**.
+
+::: footer
+[@silva2024]
+:::
+
+::: {.notes}
+Here, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios [@silva2024].
+:::
+
+
+# Methods
+
+::: {.notes}
 :::
 
 # Results
@@ -125,7 +189,7 @@ Here, our objective was to determine the spatiotemporal dynamics of WFPs in the 
 ::: {.notes}
 :::
 
-## The Brazilian semiarid {.smaller}
+## WFP in future CC scenarios {.smaller}
 
 ![](images/silva-2024-figure-2.png){fig-align="center" style="padding-top: 10px; padding-bottom: 30px"}
 
@@ -214,6 +278,8 @@ The relative balance (bars) indicates the balance between gain and loss in the d
 
 Wild food plants (WFPs) are important components of the diet and a source of income for local communities in semiarid regions, given that these populations are commonly characterized by high socioeconomic vulnerability and dependence on natural resources for subsistence.
 
+Climate change-induced redistribution of species can alter the diversity and composition of plant communities. The findings showed that the projected retractions of climatically suitable areas for WFPs in future scenarios may cause a reduction in local species richness and an increase in community heterogeneity (higher beta diversity) compared with the current scenario.
+
 ::: {.notes}
 :::
 
@@ -226,7 +292,9 @@ MIT](images/mit-license-badge.svg){style="width: 10.5%; padding-top: 0px;"}](htt
 
 This presentation was created using the Quarto Publishing System. Code and materials are available on [GitHub](https://github.com/danielvartan/amanda).
 
-![](images/allison-horst-figure-1.png){fig-align="center" style="width: 80%; padding-top: 25px;"}
+We would like to express our gratitude to [Amanda Silva](http://lattes.cnpq.br/8997021071561903) for her guidance and the opportunity to present this insightful work.
+
+![](images/allison-horst-figure-1.png){fig-align="center" style="width: 80%; padding-top: 10px;"}
 
 ::: footer
 (Artwork by [Allison Horst](https://twitter.com/allison_horst))
@@ -261,4 +329,86 @@ In accordance with the [American Psychological Association (APA) Style](https://
 
 # Appendices {visibility="uncounted"}
 
-## (AP) Appendice slide {visibility="uncounted"}
+## (AP) Run to the poles! {visibility="uncounted"}
+
+![](images/ipcc-2023-figure-spm-3.png){fig-align="center" style="padding-top: 100px; padding-bottom: 100px"}
+
+::: footer
+[Artwork by @ipcc2023a]
+:::
+
+::: {.notes}
+**Figure SPM.3**: Projected risks and impacts of climate change on natural and human systems at different global warming levels (GWLs) relative to 1850-1900 levels. Projected risks and impacts shown on the maps are based on outputs from different subsets of Earth system and impact models that were used to project each impact indicator without additional adaptation. WGII provides further assessment of the impacts on human and natural systems using these projections and additional lines of evidence. **(b)** Risks to human health as indicated by the days per year of population exposure to hyperthermic conditions that pose a risk of mortality from surface air temperature and humidity conditions for historical period (1991–2005) and at GWLs of 1.7°C–2.3°C (mean = 1.9°C; 13 climate models), 2.4°C–3.1°C (2.7°C; 16 climate models) and 4.2°C–5.4°C (4.7°C; 15 climate models). Interquartile ranges of GWLs by 2081–2100 under RCP2.6, RCP4.5 and RCP8.5. The presented index is consistent with common features found in many indices included within WGI and WGII assessments.
+:::
+
+## (AP) Run to the poles! {visibility="uncounted"}
+
+![](images/copernicus-2024-figure-2.png){fig-align="center" style="padding-top: 10px; padding-bottom: 25px"}
+
+::: footer
+([Copernicus Interactive Climate Atlas](https://atlas.climate.copernicus.eu/atlas/sCnNv9vG))
+:::
+
+::: {.notes}
+:::
+
+## (AP) Robustness {.smaller visibility="uncounted"}
+
+:::: {.columns}
+::: {.column style="width: 25%; padding-top: 0px;"}
+The order in complex systems is said to be robust because, **being distributed and not centrally produced**, it is stable under perturbations of the system [@ladyman2013].
+:::
+
+::: {.column style="width: 75%; padding-top: 0px;"}
+![](images/copernicus-2024-figure-1.png){fig-align="center" style="width: 100%; padding-top: 0px; padding-bottom: 0px;"}
+:::
+::::
+
+::: footer
+(Graph by [The Copernicus Climate Change Service](https://climate.copernicus.eu/copernicus-global-temperature-record-streak-continues-april-2024-was-hottest-record))
+:::
+
+::: {.notes}
+![](images/power-rangers-megazord-2.gif)
+:::
+
+## (AP) Equilibrium states {.smaller visibility="uncounted"}
+
+Systems in a highly stable state (**deep valley**) have low potential energy, and considerable energy is required to move them out of this stable state. Systems in an unstable state (top of a hill) have high potential energy, and they require only a little additional energy to push them off the hill.
+
+![](images/steffen-2018-figure-2.png){fig-align="center" style="width: 100%; padding-top: 10px; padding-bottom: 25px;"}
+
+::: footer
+[@steffen2018]
+:::
+
+::: {.notes}
+:::
+
+## (AP) Leverage points {.smaller visibility="uncounted"}
+
+:::: {.columns}
+::: {.column style="width: 50%; padding-top: 0px;"}
+There are places within a complex system where **a small shift in one thing can produce big changes in everything** [@meadows1999].
+
+Leverage points are points of power [@meadows2008].
+
+Possible states, even if unlikely: by modelling such interactions, **it can suggest that properties exist in the system that had not been noticed in the real world situation** [@dodig-crnkovic2013a].
+:::
+::: {.column style="width: 50%; padding-top: 0px;"}
+![](images/encontro.gif){fig-align="center" style="width: 100%; padding-top: 115px;"}
+:::
+::::
+
+::: {.notes}
+:::
+
+## {visibility="uncounted" data-menu-title="(AP) NetLogo Web: Fire model" background-iframe="https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Earth%20Science/Fire.nlogo" background-interactive=true}
+
+::: {.notes}
+:::
+
+## {visibility="uncounted" data-menu-title="(AP) Coupled Model Intercomparison Project (CMIP)" background-image="images/cmip-webpage.png" background-position="top left" background-size="100%" .scrollable}
+
+::: {.notes}
+:::
