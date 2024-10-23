@@ -58,7 +58,7 @@ SJR 2023: [1.032](https://www.scimagojr.com/journalsearch.php?q=144969&tip=sid&c
 ## The authors {.smaller}
 
 ::::: {.columns}
-:::: {.column style="width: 33%; padding-top: 0px;"}
+:::: {.column style="width: 33.333%; padding-top: 0px;"}
 ::: {style="font-weight: bold; font-size: 0.9em; text-align: center;"}
 [Amanda S. S. da Silva]{style="color: #006909;"} ![](images/brazil-flag-icon-128.png){style="height: 0.9em; margin: 0!important;"}
 :::
@@ -72,7 +72,7 @@ SJR 2023: [1.032](https://www.scimagojr.com/journalsearch.php?q=144969&tip=sid&c
 - [PPGEtno](https://www.pgetno.ufrpe.br){title="Programa de Pós-graduação em Etnobiologia e Conservação da Natureza"}
 :::
 ::::
-:::: {.column style="width: 33%; padding-top: 0px;"}
+:::: {.column style="width: 33.333%; padding-top: 0px;"}
 ::: {style="font-weight: bold; font-size: 0.9em; text-align: center;"}
 [Xavier Arnan Viadiu]{style="color: #006909;"} ![](images/spain-flag-icon-128.png){style="height: 0.9em; margin: 0!important;"}
 :::
@@ -86,7 +86,7 @@ SJR 2023: [1.032](https://www.scimagojr.com/journalsearch.php?q=144969&tip=sid&c
 - [PPGEtno](https://www.pgetno.ufrpe.br){title="Programa de Pós-graduação em Etnobiologia e Conservação da Natureza"}
 :::
 ::::
-:::: {.column style="width: 34%; padding-top: 0px;"}
+:::: {.column style="width: 33.333%; padding-top: 0px;"}
 ::: {style="font-weight: bold; font-size: 0.9em; text-align: center;"}
 [Patrícia M. de Medeiros]{style="font-weight: bold; text-align: center; color: #006909;"} ![](images/brazil-flag-icon-128.png){style="height: 0.9em; margin: 0!important;"}
 :::
@@ -124,10 +124,6 @@ SJR 2023: [1.032](https://www.scimagojr.com/journalsearch.php?q=144969&tip=sid&c
 
 ::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ed6b4d; padding-top: 125px;"}
 What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?
-:::
-
-::: footer
-[@silva2024]
 :::
 
 ::: {.notes}
@@ -409,6 +405,44 @@ See:
 ::: {.notes}
 Bioclimatic variables are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques. The bioclimatic variables represent annual trends (e.g., mean annual temperature, annual precipitation) seasonality (e.g., annual range in temperature and precipitation) and extreme or limiting environmental factors (e.g., temperature of the coldest and warmest month, and precipitation of the wet and dry quarters). A quarter is a period of three months (1/4 of the year).
 
+BIO1 = Annual Mean Temperature
+
+BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp))
+
+BIO3 = Isothermality (BIO2/BIO7) (×100)
+
+BIO4 = Temperature Seasonality (standard deviation ×100)
+
+BIO5 = Max Temperature of Warmest Month
+
+BIO6 = Min Temperature of Coldest Month
+
+BIO7 = Temperature Annual Range (BIO5-BIO6)
+
+BIO8 = Mean Temperature of Wettest Quarter
+
+BIO9 = Mean Temperature of Driest Quarter
+
+BIO10 = Mean Temperature of Warmest Quarter
+
+BIO11 = Mean Temperature of Coldest Quarter
+
+BIO12 = Annual Precipitation
+
+BIO13 = Precipitation of Wettest Month
+
+BIO14 = Precipitation of Driest Month
+
+BIO15 = Precipitation Seasonality (Coefficient of Variation)
+
+BIO16 = Precipitation of Wettest Quarter
+
+BIO17 = Precipitation of Driest Quarter
+
+BIO18 = Precipitation of Warmest Quarter
+
+BIO19 = Precipitation of Coldest Quarter
+
 See: https://www.worldclim.org/data/bioclim.html
 :::
 
@@ -494,27 +528,10 @@ After the model was generated, it was projected into the future under different 
 
 Projections of the predictor variables for the future.
 
-![](images/silva-2024-sup-figure-8.png){fig-align="center" style="width: 100%; padding-top: 35px; padding-bottom: 35px"}
+![](images/silva-2024-sup-figure-11.png){fig-align="center" style="width: 100%; padding-top: 35px; padding-bottom: 35px"}
 
 ::: {style="font-size: 0.8em; font-style: italic;"}
-Bioclimatic variables of temperature and precipitation in Brazilian Semiarid for the current scenario (on a yellow-green scale). Variation in bioclimatic variables of temperature and precipitation in semiarid region for the four future climate change projections (on a red-white-blue scale).
-:::
-
-::: footer
-[Artwork by @silva2024]
-:::
-
-::: {.notes}
-:::
-
-## Habitat suitability modeling {.smaller}
-
-Projections of the predictor variables for the future.
-
-![](images/silva-2024-sup-figure-5.png){fig-align="center" style="width: 100%; padding-top: 75px; padding-bottom: 75px"}
-
-::: {style="font-size: 0.8em; font-style: italic;"}
-Annual precipitation in the Brazilian Semiarid region for the current scenario (represented on a yellow-green scale) and the same but across four future climate change projections (represented on a red-white-blue scale).
+Habitat suitability map for Annona crassiflora (Marolo/Pinha-do-cerrado). Suitability surfaces are presented within the known extent of occurrence (EOO) and clipped by the Semiarid region. Blank areas represent locations where species have no known occurrence (extend beyond the EOO).
 :::
 
 ::: footer
@@ -576,6 +593,7 @@ The hex grid was superimposed on the geographical distribution polygons of each 
 :::
 
 ::: {.notes}
+**Fig. S8**. Projected geographic distribution of wild food plants for the current scenario (1970-2000) within the extent of the Brazilian Semiarid region. The blue dots indicate occurrence records of each species within the semiarid region. Occurrence records were gathered from the Global Biodiversity Information Facility (GBIF, 2022). 
 :::
 
 ## Species richness and composition {.smaller}
@@ -595,7 +613,7 @@ The hex grid was superimposed on the geographical distribution polygons of each 
 
 The hex grid was superimposed on the geographical distribution polygons of each species, and species richness was estimated by the sum of the number of species found in each hexagon for each climate scenario (current and future).
 
-![](images/silva-2024-sup-figure-9.png){fig-align="center" style="padding-top: 10px; padding-bottom: 25px"}
+![](images/silva-2024-sup-figure-9.png){fig-align="center" style="padding-top: 75px; padding-bottom: 25px"}
 
 ::: footer
 [Artwork by @silva2024]
@@ -604,7 +622,7 @@ The hex grid was superimposed on the geographical distribution polygons of each 
 ::: {.notes}
 :::
 
-## Beta diversity {.smaller}
+## Species richness and composition {.smaller}
 
 :::: {.columns}
 ::: {.column style="width: 50%; padding-top: 0px;"}
@@ -627,12 +645,30 @@ The hex grid was superimposed on the geographical distribution polygons of each 
 **Fig. S6**. Representation of β diversity estimation in a grid. Spatial β diversity (A) was estimated by quantifying the average β diversity between each hexagon (focal cell in blue) and the six cells surrounding it (dashed blue line equivalent to a radius of 0.5 degrees, same resolution as the hexagon, ~55.6 km), for each climatic scenario (current and future). Temporal β diversity (B) was estimated by comparing the current species composition with the species composition in each future scenario (dashed blue line), considering the same hexagon (focal cell in blue). 
 :::
 
+## Bioclimatic variation {.smaller}
+
+Projections of the predictor variables for the future.
+
+![](images/silva-2024-sup-figure-5.png){fig-align="center" style="width: 100%; padding-top: 50px; padding-bottom: 50px"}
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Annual precipitation in the Brazilian Semiarid region for the current scenario (represented on a yellow-green scale) and the same but across four future climate change projections (represented on a red-white-blue scale). The current scenario considers the historical climate of the period 1970-2000. The projected climate changes are for the period 2041-2060
+:::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+
 # Results & Discussion
 
 ::: {.notes}
 :::
 
-## WFP in future CC scenarios {.smaller}
+## Variations in geographical dist. {.smaller}
 
 ![](images/silva-2024-figure-2.png){fig-align="center" style="padding-top: 10px; padding-bottom: 30px"}
 
@@ -649,7 +685,39 @@ The relative balance (bars) indicates the balance between gain and loss in the d
 **Economic impact**: Species experiencing the greatest loss of suitable areas are important for local income, such as pequi, licuri, buriti, and mangaba, whose sales reached R$ 700.00 in 2016/2017.
 :::
 
-## Species richness {.smaller}
+## Variations in geographical dist. {.smaller}
+
+![](images/silva-2024-sup-figure-12.png){fig-align="center" style="width: 100%; padding-top: 35px; padding-bottom: 35px"}
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Lost area, gained area, and intersection area in the geographic distribution of **Acrocomia aculeata** (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios.
+:::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+**Fig. S9**. Lost area, gained area, and intersection area in the geographic distribution of each species (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios. The projections range from a more optimistic to a more pessimistic scenario regarding greenhouse gas emissions (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, respectively). 
+:::
+
+## Variations in geographical dist. {.smaller}
+
+![](images/silva-2024-sup-figure-13.png){fig-align="center" style="width: 100%; padding-top: 35px; padding-bottom: 35px"}
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Lost area, gained area, and intersection area in the geographic distribution of **Dipteryx alata** (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios.
+:::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+**Fig. S9**. Lost area, gained area, and intersection area in the geographic distribution of each species (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios. The projections range from a more optimistic to a more pessimistic scenario regarding greenhouse gas emissions (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, respectively). 
+:::
+
+## Variations in species richness {.smaller}
 
 ![](images/silva-2024-figure-3-1.png){fig-align="center" style="padding-top: 10px; padding-bottom: 30px"}
 
@@ -663,7 +731,7 @@ The relative balance (bars) indicates the balance between gain and loss in the d
 Species number == richness. Species identity == composition.
 :::
 
-## Spatial beta diversity {.smaller}
+## Variations in species composition {.smaller}
 
 ![](images/silva-2024-figure-3-2.png){fig-align="center" style="padding-top: 10px; padding-bottom: 30px"}
 
@@ -672,10 +740,12 @@ Species number == richness. Species identity == composition.
 :::
 
 ::: {.notes}
+Beta diversity estimates (spatial and temporal) were calculated using the Sørensen index (ßSor), which measures the dissimilarity in species composition between biological communities. ßSor values range from 0 to 1, and the closer to 1, the greater the dissimilarity between communities [@silva2024].
+
 **Fig. 3** Species richness and spatial beta diversity of wild food plants (hexagons) in the Brazilian semiarid. **a** Species richness in the cur- rent scenario (1970–2000) and in the four future climate change scenarios (2041–2060). **b** Variation of species richness in the four future climate change scenarios (2041–2060). **c** Spatial beta diversity in the current scenario (1970–2000) and in the four future climate change scenarios (2041–2060). Spatial beta diversity quantifies the difference in species composition between a focal cell and its surrounding cells (0.5° radius). **d** Variation of spatial beta diversity in the four future climate change scenarios (2041–2060). Boxplots show the median, quartiles, and standard error of the variation ($n = 430$) in each future scenario. Negative values indicate reductions (red) and positive values indicate increases (green) [@silva2024].
 :::
 
-## Temporal beta diversity of WFP {.smaller}
+## Variations in species composition {.smaller}
 
 ![](images/silva-2024-figure-4-1.png){fig-align="center" style="padding-top: 100px; padding-bottom: 100px"}
 
@@ -687,7 +757,7 @@ Species number == richness. Species identity == composition.
 **Fig. 4** Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. **a** Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely **b** turnover and **c** nestedness [@silva2024].
 :::
 
-## Temporal beta diversity of WFP {.smaller}
+## Variations in species composition {.smaller}
 
 ![](images/silva-2024-figure-4-2.png){fig-align="center" style="padding-top: 100px; padding-bottom: 100px"}
 
@@ -696,10 +766,12 @@ Species number == richness. Species identity == composition.
 :::
 
 ::: {.notes}
+The turnover component of Sørensen’s dissimilarity (ßsim) refers to the replacement of species from one location by different species from another location [@silva2024].
+
 **Fig. 4** Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. **a** Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely **b** turnover and **c** nestedness [@silva2024].
 :::
 
-## Temporal beta diversity of WFP {.smaller}
+## Variations in species composition {.smaller}
 
 ![](images/silva-2024-figure-4-3.png){fig-align="center" style="padding-top: 100px; padding-bottom: 100px"}
 
@@ -708,19 +780,31 @@ Species number == richness. Species identity == composition.
 :::
 
 ::: {.notes}
+The nestedness component (ßnes) implies species loss or gain at only one of the sites, where the poorer site is considered a subset of the richer site [@silva2024].
+
 **Fig. 4** Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. **a** Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely **b** turnover and **c** nestedness [@silva2024].
 :::
 
 
 # Conclusion
 
+## Question
+
+::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ed6b4d; padding-top: 125px;"}
+What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?
+:::
+
+::: {.notes}
+*Qual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?*
+:::
+
 ## Conclusion
 
-The species with the highest projected losses in climatically suitable areas were those that contribute substantially to the income of local populations.
+The species with the **[highest projected losses]{style="color: #ed6b4d;"}** in climatically suitable areas were those that contribute substantially to the income of local populations.
 
-Some species will expand their range, being more tolerant to global changes, and can be used to replace this loss of food species.
+Some species will **[expand their range]{style="color: #006909;"}**, being more tolerant to global changes, and can be used to replace this loss of food species.
 
-In addition to climate change, other threats can contrib- ute to reductions in the geographical distribution of species, such as changes in land use and unsustainable extraction.
+In addition to climate change, **[other threats]{style="color: #ed6b4d;"}** can contribute to reductions in the geographical distribution of species, such as changes in land use and unsustainable extraction.
 
 ::: footer
 [@silva2024]

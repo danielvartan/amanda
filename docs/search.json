@@ -32,7 +32,7 @@
     "href": "index.html#question",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Question",
-    "text": "Question\n\nWhat will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?\n\n\n(Silva et al., 2024)\n\nQual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?\nThis study aimed to estimate the future availability of nutritionally and economically important WFP species in the Brazilian semiarid and determine their spatiotemporal variation in future scenarios of climate change.\nHere, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios (Silva et al., 2024).\nThe effects of climate change on productive activities may lead to reductions in global agricultural production and, consequently, food availability (Zhu et al. 2022) (Silva et al., 2024).\nPlant communities may become more homogeneous or heterogeneous in terms of spatial distribution, owing to changes in the average size of distribution areas through the expansion or contraction of geographical ranges and the extinction or introduction of species with restricted distribution (Ochoa-Ochoa et al. 2012; Lima et al. 2019) (Silva et al., 2024)."
+    "text": "Question\n\nWhat will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?\n\nQual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?\nThis study aimed to estimate the future availability of nutritionally and economically important WFP species in the Brazilian semiarid and determine their spatiotemporal variation in future scenarios of climate change.\nHere, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios (Silva et al., 2024).\nThe effects of climate change on productive activities may lead to reductions in global agricultural production and, consequently, food availability (Zhu et al. 2022) (Silva et al., 2024).\nPlant communities may become more homogeneous or heterogeneous in terms of spatial distribution, owing to changes in the average size of distribution areas through the expansion or contraction of geographical ranges and the extinction or introduction of species with restricted distribution (Ochoa-Ochoa et al. 2012; Lima et al. 2019) (Silva et al., 2024)."
   },
   {
     "objectID": "index.html#wild-food-plants",
@@ -102,7 +102,7 @@
     "href": "index.html#bioclimatic-variables",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Bioclimatic variables",
-    "text": "Bioclimatic variables\n\nBioclimatic variables are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques (WorldClim, n.d.).\n\n\n\n\n\n\n\n\n(Artwork by Arthur Ramalho Magalhães)\n\nBioclimatic variables are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques. The bioclimatic variables represent annual trends (e.g., mean annual temperature, annual precipitation) seasonality (e.g., annual range in temperature and precipitation) and extreme or limiting environmental factors (e.g., temperature of the coldest and warmest month, and precipitation of the wet and dry quarters). A quarter is a period of three months (1/4 of the year).\nSee: https://www.worldclim.org/data/bioclim.html"
+    "text": "Bioclimatic variables\n\nBioclimatic variables are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques (WorldClim, n.d.).\n\n\n\n\n\n\n\n\n(Artwork by Arthur Ramalho Magalhães)\n\nBioclimatic variables are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques. The bioclimatic variables represent annual trends (e.g., mean annual temperature, annual precipitation) seasonality (e.g., annual range in temperature and precipitation) and extreme or limiting environmental factors (e.g., temperature of the coldest and warmest month, and precipitation of the wet and dry quarters). A quarter is a period of three months (1/4 of the year).\nBIO1 = Annual Mean Temperature\nBIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp))\nBIO3 = Isothermality (BIO2/BIO7) (×100)\nBIO4 = Temperature Seasonality (standard deviation ×100)\nBIO5 = Max Temperature of Warmest Month\nBIO6 = Min Temperature of Coldest Month\nBIO7 = Temperature Annual Range (BIO5-BIO6)\nBIO8 = Mean Temperature of Wettest Quarter\nBIO9 = Mean Temperature of Driest Quarter\nBIO10 = Mean Temperature of Warmest Quarter\nBIO11 = Mean Temperature of Coldest Quarter\nBIO12 = Annual Precipitation\nBIO13 = Precipitation of Wettest Month\nBIO14 = Precipitation of Driest Month\nBIO15 = Precipitation Seasonality (Coefficient of Variation)\nBIO16 = Precipitation of Wettest Quarter\nBIO17 = Precipitation of Driest Quarter\nBIO18 = Precipitation of Warmest Quarter\nBIO19 = Precipitation of Coldest Quarter\nSee: https://www.worldclim.org/data/bioclim.html"
   },
   {
     "objectID": "index.html#habitat-suitability-modeling",
@@ -137,14 +137,7 @@
     "href": "index.html#habitat-suitability-modeling-4",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Habitat suitability modeling",
-    "text": "Habitat suitability modeling\nAfter the model was generated, it was projected into the future under different scenarios.\nProjections of the predictor variables for the future.\n\n\nBioclimatic variables of temperature and precipitation in Brazilian Semiarid for the current scenario (on a yellow-green scale). Variation in bioclimatic variables of temperature and precipitation in semiarid region for the four future climate change projections (on a red-white-blue scale).\n\n\n(Artwork by Silva et al., 2024)"
-  },
-  {
-    "objectID": "index.html#habitat-suitability-modeling-5",
-    "href": "index.html#habitat-suitability-modeling-5",
-    "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "Habitat suitability modeling",
-    "text": "Habitat suitability modeling\nProjections of the predictor variables for the future.\n\n\nAnnual precipitation in the Brazilian Semiarid region for the current scenario (represented on a yellow-green scale) and the same but across four future climate change projections (represented on a red-white-blue scale).\n\n\n(Artwork by Silva et al., 2024)"
+    "text": "Habitat suitability modeling\nAfter the model was generated, it was projected into the future under different scenarios.\nProjections of the predictor variables for the future.\n\n\nHabitat suitability map for Annona crassiflora (Marolo/Pinha-do-cerrado). Suitability surfaces are presented within the known extent of occurrence (EOO) and clipped by the Semiarid region. Blank areas represent locations where species have no known occurrence (extend beyond the EOO).\n\n\n(Artwork by Silva et al., 2024)"
   },
   {
     "objectID": "index.html#geographical-distribution",
@@ -165,7 +158,7 @@
     "href": "index.html#species-richness-and-composition-1",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Species richness and composition",
-    "text": "Species richness and composition\nThe hex grid was superimposed on the geographical distribution polygons of each species, and species richness was estimated by the sum of the number of species found in each hexagon for each climate scenario (current and future).\n\n\n(Artwork by Silva et al., 2024)"
+    "text": "Species richness and composition\nThe hex grid was superimposed on the geographical distribution polygons of each species, and species richness was estimated by the sum of the number of species found in each hexagon for each climate scenario (current and future).\n\n\n(Artwork by Silva et al., 2024)\n\nFig. S8. Projected geographic distribution of wild food plants for the current scenario (1970-2000) within the extent of the Brazilian Semiarid region. The blue dots indicate occurrence records of each species within the semiarid region. Occurrence records were gathered from the Global Biodiversity Information Facility (GBIF, 2022)."
   },
   {
     "objectID": "index.html#species-richness-and-composition-2",
@@ -182,60 +175,88 @@
     "text": "Species richness and composition\nThe hex grid was superimposed on the geographical distribution polygons of each species, and species richness was estimated by the sum of the number of species found in each hexagon for each climate scenario (current and future).\n\n\n(Artwork by Silva et al., 2024)"
   },
   {
-    "objectID": "index.html#beta-diversity",
-    "href": "index.html#beta-diversity",
+    "objectID": "index.html#species-richness-and-composition-4",
+    "href": "index.html#species-richness-and-composition-4",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "Beta diversity",
-    "text": "Beta diversity\n\n\nSpatial Beta Diversity quantifies the difference in species composition between a focal cell and the surrounding cells.\n\n\n\n\n\nTemporal Beta Diversity quantifies the difference in species composition between a focal cell and the same cell in a future scenario.\n\n\n\n\n\n\n(Artwork by Silva et al., 2024)\n\nFig. S6. Representation of β diversity estimation in a grid. Spatial β diversity (A) was estimated by quantifying the average β diversity between each hexagon (focal cell in blue) and the six cells surrounding it (dashed blue line equivalent to a radius of 0.5 degrees, same resolution as the hexagon, ~55.6 km), for each climatic scenario (current and future). Temporal β diversity (B) was estimated by comparing the current species composition with the species composition in each future scenario (dashed blue line), considering the same hexagon (focal cell in blue)."
+    "section": "Species richness and composition",
+    "text": "Species richness and composition\n\n\nSpatial Beta Diversity quantifies the difference in species composition between a focal cell and the surrounding cells.\n\n\n\n\n\nTemporal Beta Diversity quantifies the difference in species composition between a focal cell and the same cell in a future scenario.\n\n\n\n\n\n\n(Artwork by Silva et al., 2024)\n\nFig. S6. Representation of β diversity estimation in a grid. Spatial β diversity (A) was estimated by quantifying the average β diversity between each hexagon (focal cell in blue) and the six cells surrounding it (dashed blue line equivalent to a radius of 0.5 degrees, same resolution as the hexagon, ~55.6 km), for each climatic scenario (current and future). Temporal β diversity (B) was estimated by comparing the current species composition with the species composition in each future scenario (dashed blue line), considering the same hexagon (focal cell in blue)."
   },
   {
-    "objectID": "index.html#wfp-in-future-cc-scenarios",
-    "href": "index.html#wfp-in-future-cc-scenarios",
+    "objectID": "index.html#bioclimatic-variation",
+    "href": "index.html#bioclimatic-variation",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "WFP in future CC scenarios",
-    "text": "WFP in future CC scenarios\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 2 Relative balance in the geographical distribution area of wild food plants of the Brazilian semiarid in future climate change scenarios (2041–2060). The relative balance (bars) indicates the balance between gain and loss in the distribution area of each species and is proportional to the current (1970–2000) distribution area. Boxplots show the median, quartiles, and standard error of the relative balance of all species (\\(n = 27\\)) in each future scenario; points represent outliers (Dipteryx alata Vogel). Nega- tive values indicate a reduction in distribution area, and positive values indicate an increase (Silva et al., 2024).\nEffects of climate change (2041–2060): Suitable areas for most wild food plants (WFPs) in the Brazilian semiarid region will shrink.\nEconomic impact: Species experiencing the greatest loss of suitable areas are important for local income, such as pequi, licuri, buriti, and mangaba, whose sales reached R$ 700.00 in 2016/2017."
+    "section": "Bioclimatic variation",
+    "text": "Bioclimatic variation\nProjections of the predictor variables for the future.\n\n\nAnnual precipitation in the Brazilian Semiarid region for the current scenario (represented on a yellow-green scale) and the same but across four future climate change projections (represented on a red-white-blue scale). The current scenario considers the historical climate of the period 1970-2000. The projected climate changes are for the period 2041-2060\n\n\n(Artwork by Silva et al., 2024)"
   },
   {
-    "objectID": "index.html#species-richness",
-    "href": "index.html#species-richness",
+    "objectID": "index.html#variations-in-geographical-dist.",
+    "href": "index.html#variations-in-geographical-dist.",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "Species richness",
-    "text": "Species richness\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 3 Species richness and spatial beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Species richness in the cur- rent scenario (1970–2000) and in the four future climate change scenarios (2041–2060). b Variation of species richness in the four future climate change scenarios (2041–2060). c Spatial beta diversity in the current scenario (1970–2000) and in the four future climate change scenarios (2041–2060). Spatial beta diversity quantifies the difference in species composition between a focal cell and its surrounding cells (0.5° radius). d Variation of spatial beta diversity in the four future climate change scenarios (2041–2060). Boxplots show the median, quartiles, and standard error of the variation (\\(n = 430\\)) in each future scenario. Negative values indicate reductions (red) and positive values indicate increases (green) (Silva et al., 2024).\nSpecies number == richness. Species identity == composition."
+    "section": "Variations in geographical dist.",
+    "text": "Variations in geographical dist.\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 2 Relative balance in the geographical distribution area of wild food plants of the Brazilian semiarid in future climate change scenarios (2041–2060). The relative balance (bars) indicates the balance between gain and loss in the distribution area of each species and is proportional to the current (1970–2000) distribution area. Boxplots show the median, quartiles, and standard error of the relative balance of all species (\\(n = 27\\)) in each future scenario; points represent outliers (Dipteryx alata Vogel). Nega- tive values indicate a reduction in distribution area, and positive values indicate an increase (Silva et al., 2024).\nEffects of climate change (2041–2060): Suitable areas for most wild food plants (WFPs) in the Brazilian semiarid region will shrink.\nEconomic impact: Species experiencing the greatest loss of suitable areas are important for local income, such as pequi, licuri, buriti, and mangaba, whose sales reached R$ 700.00 in 2016/2017."
   },
   {
-    "objectID": "index.html#spatial-beta-diversity",
-    "href": "index.html#spatial-beta-diversity",
+    "objectID": "index.html#variations-in-geographical-dist.-1",
+    "href": "index.html#variations-in-geographical-dist.-1",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "Spatial beta diversity",
-    "text": "Spatial beta diversity\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 3 Species richness and spatial beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Species richness in the cur- rent scenario (1970–2000) and in the four future climate change scenarios (2041–2060). b Variation of species richness in the four future climate change scenarios (2041–2060). c Spatial beta diversity in the current scenario (1970–2000) and in the four future climate change scenarios (2041–2060). Spatial beta diversity quantifies the difference in species composition between a focal cell and its surrounding cells (0.5° radius). d Variation of spatial beta diversity in the four future climate change scenarios (2041–2060). Boxplots show the median, quartiles, and standard error of the variation (\\(n = 430\\)) in each future scenario. Negative values indicate reductions (red) and positive values indicate increases (green) (Silva et al., 2024)."
+    "section": "Variations in geographical dist.",
+    "text": "Variations in geographical dist.\n\n\nLost area, gained area, and intersection area in the geographic distribution of Acrocomia aculeata (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios.\n\n\n(Artwork by Silva et al., 2024)\n\nFig. S9. Lost area, gained area, and intersection area in the geographic distribution of each species (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios. The projections range from a more optimistic to a more pessimistic scenario regarding greenhouse gas emissions (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, respectively)."
   },
   {
-    "objectID": "index.html#temporal-beta-diversity-of-wfp",
-    "href": "index.html#temporal-beta-diversity-of-wfp",
+    "objectID": "index.html#variations-in-geographical-dist.-2",
+    "href": "index.html#variations-in-geographical-dist.-2",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "Temporal beta diversity of WFP",
-    "text": "Temporal beta diversity of WFP\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 4 Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely b turnover and c nestedness (Silva et al., 2024)."
+    "section": "Variations in geographical dist.",
+    "text": "Variations in geographical dist.\n\n\nLost area, gained area, and intersection area in the geographic distribution of Dipteryx alata (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios.\n\n\n(Artwork by Silva et al., 2024)\n\nFig. S9. Lost area, gained area, and intersection area in the geographic distribution of each species (within the semiarid region) in the four future climate change projections (period 2041-2060). The lost area (in red) and gained area (in green) are relative to the current projected distribution area of the species. The intersection area (in grey) represents the distribution area maintained between current and future scenarios. The projections range from a more optimistic to a more pessimistic scenario regarding greenhouse gas emissions (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, respectively)."
   },
   {
-    "objectID": "index.html#temporal-beta-diversity-of-wfp-1",
-    "href": "index.html#temporal-beta-diversity-of-wfp-1",
+    "objectID": "index.html#variations-in-species-richness",
+    "href": "index.html#variations-in-species-richness",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "Temporal beta diversity of WFP",
-    "text": "Temporal beta diversity of WFP\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 4 Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely b turnover and c nestedness (Silva et al., 2024)."
+    "section": "Variations in species richness",
+    "text": "Variations in species richness\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 3 Species richness and spatial beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Species richness in the cur- rent scenario (1970–2000) and in the four future climate change scenarios (2041–2060). b Variation of species richness in the four future climate change scenarios (2041–2060). c Spatial beta diversity in the current scenario (1970–2000) and in the four future climate change scenarios (2041–2060). Spatial beta diversity quantifies the difference in species composition between a focal cell and its surrounding cells (0.5° radius). d Variation of spatial beta diversity in the four future climate change scenarios (2041–2060). Boxplots show the median, quartiles, and standard error of the variation (\\(n = 430\\)) in each future scenario. Negative values indicate reductions (red) and positive values indicate increases (green) (Silva et al., 2024).\nSpecies number == richness. Species identity == composition."
   },
   {
-    "objectID": "index.html#temporal-beta-diversity-of-wfp-2",
-    "href": "index.html#temporal-beta-diversity-of-wfp-2",
+    "objectID": "index.html#variations-in-species-composition",
+    "href": "index.html#variations-in-species-composition",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "Temporal beta diversity of WFP",
-    "text": "Temporal beta diversity of WFP\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 4 Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely b turnover and c nestedness (Silva et al., 2024)."
+    "section": "Variations in species composition",
+    "text": "Variations in species composition\n\n\n(Artwork by Silva et al., 2024)\n\nBeta diversity estimates (spatial and temporal) were calculated using the Sørensen index (ßSor), which measures the dissimilarity in species composition between biological communities. ßSor values range from 0 to 1, and the closer to 1, the greater the dissimilarity between communities (Silva et al., 2024).\nFig. 3 Species richness and spatial beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Species richness in the cur- rent scenario (1970–2000) and in the four future climate change scenarios (2041–2060). b Variation of species richness in the four future climate change scenarios (2041–2060). c Spatial beta diversity in the current scenario (1970–2000) and in the four future climate change scenarios (2041–2060). Spatial beta diversity quantifies the difference in species composition between a focal cell and its surrounding cells (0.5° radius). d Variation of spatial beta diversity in the four future climate change scenarios (2041–2060). Boxplots show the median, quartiles, and standard error of the variation (\\(n = 430\\)) in each future scenario. Negative values indicate reductions (red) and positive values indicate increases (green) (Silva et al., 2024)."
+  },
+  {
+    "objectID": "index.html#variations-in-species-composition-1",
+    "href": "index.html#variations-in-species-composition-1",
+    "title": "Climate change and the availability of wild food plants in the semiarid",
+    "section": "Variations in species composition",
+    "text": "Variations in species composition\n\n\n(Artwork by Silva et al., 2024)\n\nFig. 4 Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely b turnover and c nestedness (Silva et al., 2024)."
+  },
+  {
+    "objectID": "index.html#variations-in-species-composition-2",
+    "href": "index.html#variations-in-species-composition-2",
+    "title": "Climate change and the availability of wild food plants in the semiarid",
+    "section": "Variations in species composition",
+    "text": "Variations in species composition\n\n\n(Artwork by Silva et al., 2024)\n\nThe turnover component of Sørensen’s dissimilarity (ßsim) refers to the replacement of species from one location by different species from another location (Silva et al., 2024).\nFig. 4 Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely b turnover and c nestedness (Silva et al., 2024)."
+  },
+  {
+    "objectID": "index.html#variations-in-species-composition-3",
+    "href": "index.html#variations-in-species-composition-3",
+    "title": "Climate change and the availability of wild food plants in the semiarid",
+    "section": "Variations in species composition",
+    "text": "Variations in species composition\n\n\n(Artwork by Silva et al., 2024)\n\nThe nestedness component (ßnes) implies species loss or gain at only one of the sites, where the poorer site is considered a subset of the richer site (Silva et al., 2024).\nFig. 4 Temporal beta diversity of wild food plants (hexagons) in the Brazilian semiarid. a Temporal beta diversity in the four future climate change scenarios (2041–2060). Temporal beta diversity quantifies the difference in species composition of the same focal cell at two different times (present and future). Temporal beta diversity was partitioned into its components, namely b turnover and c nestedness (Silva et al., 2024)."
+  },
+  {
+    "objectID": "index.html#question-1",
+    "href": "index.html#question-1",
+    "title": "Climate change and the availability of wild food plants in the semiarid",
+    "section": "Question",
+    "text": "Question\n\nWhat will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?\n\nQual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?"
   },
   {
     "objectID": "index.html#conclusion-1",
     "href": "index.html#conclusion-1",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Conclusion",
-    "text": "Conclusion\nThe species with the highest projected losses in climatically suitable areas were those that contribute substantially to the income of local populations.\nSome species will expand their range, being more tolerant to global changes, and can be used to replace this loss of food species.\nIn addition to climate change, other threats can contrib- ute to reductions in the geographical distribution of species, such as changes in land use and unsustainable extraction.\n\n(Silva et al., 2024)"
+    "text": "Conclusion\nThe species with the highest projected losses in climatically suitable areas were those that contribute substantially to the income of local populations.\nSome species will expand their range, being more tolerant to global changes, and can be used to replace this loss of food species.\nIn addition to climate change, other threats can contribute to reductions in the geographical distribution of species, such as changes in land use and unsustainable extraction.\n\n(Silva et al., 2024)"
   },
   {
     "objectID": "index.html#closing-remarks",
