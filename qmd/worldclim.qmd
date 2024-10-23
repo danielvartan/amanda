@@ -1,0 +1,275 @@
+---
+title: "WorldClim"
+format: html
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+source(here::here("R/quarto-setup.R"))
+```
+
+## Overview
+
+This document provides a mean to download, import and plot the data from the [WorldClim 2.1](https://worldclim.org/) database.
+
+## Setting things up
+
+```{r}
+#| eval: false
+
+library(beepr)
+library(curl)
+library(dplyr)
+library(ggplot2)
+library(ggpubr)
+library(magrittr)
+library(raster)
+library(spData)
+library(viridis)
+```
+
+```{r}
+#| include: false
+
+library(magrittr)
+library(rlang)
+```
+
+## Downloading data
+
+- GCM: ACCESS-CM2.
+- Resolution: 5 arc-minutes.
+- Variable: tx - monthly average maximum temperature (°C).
+
+```{r}
+sources <- list(
+  ssp126 = list(
+    source = "https://geodata.ucdavis.edu/cmip6/5m/ACCESS-CM2/ssp126/wc2.1_5m_tmax_ACCESS-CM2_ssp126_2021-2040.tif",
+    file = tempfile()
+  ),
+  ssp245 = list(
+    source = "https://geodata.ucdavis.edu/cmip6/5m/ACCESS-CM2/ssp245/wc2.1_5m_tmax_ACCESS-CM2_ssp245_2021-2040.tif",
+    file = tempfile()
+  ),
+  ssp370 = list(
+    source = "https://geodata.ucdavis.edu/cmip6/5m/ACCESS-CM2/ssp370/wc2.1_5m_tmax_ACCESS-CM2_ssp370_2021-2040.tif",
+    file = tempfile()
+  ),
+  ssp585 = list(
+    source = "https://geodata.ucdavis.edu/cmip6/5m/ACCESS-CM2/ssp585/wc2.1_5m_tmax_ACCESS-CM2_ssp585_2021-2040.tif",
+    file = tempfile()
+  )
+)
+```
+
+```{r}
+for (i in sources) {
+  curl::curl_download(i$source, destfile = i$file, quiet = TRUE)
+}
+
+beepr::beep(1)
+```
+
+## Importing the data
+
+```{r}
+band <- "tmax06"
+```
+
+```{r}
+for (i in names(sources)) {
+  sources[[i]] <- c(
+    sources[[i]],
+    ras = 
+      sources[[i]]$file |> 
+      raster::stack() |> 
+      magrittr::extract2(band)
+  )
+}
+```
+
+## Plotting the data
+
+```{r}
+#| eval: false
+
+sa_shape <- 
+  spData::world |>
+  dplyr::filter(continent == "South America")
+```
+
+```{r}
+#| eval: false
+
+croped_ras <- 
+  sources$ssp126$ras |> 
+  raster::crop(raster::extent(sa_shape)) |>
+  raster::mask(sa_shape)
+```
+
+```{r}
+#| eval: false
+
+plot_ras <- 
+  croped_ras |>
+  raster::rasterToPoints() |>
+  dplyr::as_tibble()
+```
+
+```{r}
+plot_ras |>
+  ggplot2::ggplot(ggplot2::aes(x = x, y = y, fill = !!as.symbol(band))) + 
+  ggplot2::geom_sf(
+    data = sa_shape, 
+    color = NA, 
+    fill = "gray", 
+    inherit.aes = FALSE
+  ) +
+  ggplot2::geom_tile() +
+  # ggplot2::scale_fill_distiller(palette = "YlOrRd", direction = 1) +
+  viridis::scale_fill_viridis(option = "B", direction = 1) +
+  ggplot2::theme(
+    axis.title.x = ggplot2::element_blank(),
+    axis.title.y = ggplot2::element_blank()
+  ) +
+  ggplot2::labs(fill = "")
+```
+
+```{r}
+color_range <- list(
+  min = sources[[1]]$ras@data@min,
+  max = sources[[1]]$ras@data@max
+)
+
+for (i in names(sources)) {
+  color_range$min <- ifelse(
+    color_range$min < sources[[i]]$ras@data@min, 
+    color_range$min, 
+    sources[[i]]$ras@data@min
+  )
+  
+  color_range$max <- ifelse(
+    color_range$max > sources[[i]]$ras@data@max, 
+    color_range$max, 
+    sources[[i]]$ras@data@max
+  )
+}
+
+color_range <- c(
+  floor(color_range$min), 
+  ceiling(color_range$max)
+)
+
+color_range
+```
+
+To do: **Figure 10**. Surface air temperature differences (°C) for late 21st century 2081–2100. Minus 1995–2014 of the corresponding historical ensemble member for the non-interactive climate model. (a) SSP1-2.6; (b) SSP2-4.5; (c) SSP4-6.0; (d) SSP5-8.5. [@nazarenko2022].
+
+```{r}
+plot_ssp <- function(ssp, sources, color_range) {
+  checkmate::assert_choice(ssp, c("ssp126", "ssp245", "ssp370", "ssp585"))
+  checkmate::assert_list(sources)
+  checkmate::assert_set_equal(names(sources[[1]]), c("source", "file", "ras"))
+  checkmate::assert_integerish(color_range, len = 2)
+  
+  world_shape <-spData::world
+  band <- names(sources[[1]]$ras)
+  
+  plot_ras <- 
+    sources[[ssp]]$ras |>
+    raster::rasterToPoints() |>
+    dplyr::as_tibble()
+  
+  breaks <- c(color_range[1], 0, color_range[2])
+  
+  plot_ras |>
+    ggplot2::ggplot(ggplot2::aes(x = x, y = y, fill = !!as.symbol(band))) + 
+    ggplot2::geom_sf(
+      data = world_shape, 
+      color = NA, 
+      fill = "gray", 
+      inherit.aes = FALSE
+    ) +
+    ggplot2::geom_tile() +
+    ggplot2::scale_fill_distiller(
+      palette = "RdBu", 
+      direction = -1,
+      breaks = breaks,
+      labels = as.character(breaks),
+      limits = color_range
+    ) +
+    # ggplot2::scale_fill_gradient2(
+    #   low = "purple4", 
+    #   high = "darkred", 
+    #   mid = "white", 
+    #   midpoint = 0,
+    #   limits = color_range
+    # ) +
+    # viridis::scale_fill_viridis(
+    #   option = "B", 
+    #   direction = 1,
+    #   limits = color_range
+    # ) +
+    ggplot2::theme(
+      axis.title.x = ggplot2::element_blank(),
+      axis.title.y = ggplot2::element_blank()
+    ) +
+    ggplot2::labs(
+      subtitle = toupper(ssp),
+      fill = ""
+    )
+}
+```
+
+```{r}
+color_range <- c(-60, 60)
+```
+
+```{r}
+plot_ssp126 <- plot_ssp("ssp126", sources, color_range)
+
+plot_ssp126
+```
+
+```{r}
+plot_ssp245 <- plot_ssp("ssp245", sources, color_range)
+
+plot_ssp245
+```
+
+```{r}
+plot_ssp370 <- plot_ssp("ssp370", sources, color_range)
+
+plot_ssp370
+```
+
+```{r}
+plot_ssp585 <- plot_ssp("ssp585", sources, color_range)
+
+plot_ssp585
+```
+
+```{r}
+ggpubr::ggarrange(
+  plot_ssp126, 
+  plot_ssp245,
+  plot_ssp370,
+  plot_ssp585,
+  ncol = 2, 
+  nrow = 2,
+  align = "v",
+  legend = "bottom",
+  common.legend = TRUE
+)
+```
+
+## References {.smaller}
+
+::: {style="font-size: 0.75em;"}
+In accordance with the [American Psychological Association (APA) Style](https://apastyle.apa.org/), 7th edition.
+:::
+
+::: {#refs style="font-size: 0.75em;"}
+:::

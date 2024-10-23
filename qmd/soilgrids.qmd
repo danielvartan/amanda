@@ -1,0 +1,193 @@
+---
+title: "SoilGrids"
+format: html
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+source(here::here("R/quarto-setup.R"))
+```
+
+## Overview
+
+This document provides a mean to download, import and plot the data from the Global Gridded Soil Information ([SoilGrids ](https://www.isric.org/explore/soilgrids)) database.
+
+## Setting things up
+
+```{r}
+#| eval: false
+
+library(beepr)
+library(dplyr)
+library(ggplot2)
+library(magrittr)
+library(terra)
+library(tidyterra)
+library(spData)
+library(viridis)
+```
+
+```{r}
+#| include: false
+
+library(magrittr)
+library(terra)
+library(tidyterra)
+```
+
+## Downloading data
+
+For more information, see: 
+
+- https://www.isric.org/explore/soilgrids
+- https://soilgrids.org
+- https://www.isric.org/explore/soilgrids/soilgrids-access
+- https://git.wur.nl/isric/soilgrids/soilgrids.notebooks/-/blob/master/markdown/webdav_from_R_terra.md
+- https://git.wur.nl/isric/soilgrids/soilgrids.notebooks/-/blob/master/markdown/webdav_from_R.md
+
+- Variable: Nitrogen.
+- Depth: 0-5.
+- Value: Mean in cg/kg.
+- Spatial resolution: 5000m cell size.
+
+```{r}
+source <- "https://files.isric.org/soilgrids/latest/data/nitrogen/nitrogen_0-5cm_mean.vrt"
+```
+
+```{r}
+resolution <- "5000m" # or "1000m"" or "5000m"
+
+voi <- "nitrogen" # variable of interest
+depth <- "0-5cm" # 0-5cm, 5-15cm, 15-30cm, 30-60cm, 60-100cm or 100-200cm
+quantile <- "mean" # mean, Q0.05, Q0.5, Q0.95 or uncertainty
+
+voi_layer <- paste(voi, depth, quantile, sep="_") # layer of interest
+
+ras_crs <- "ESRI:54052" # ESRI code of the interrupted Goode Homolosine projection used by SoilGrids
+```
+
+```{r}
+#| eval: false
+#| output: false
+
+sa_shape <- 
+  # spData::world |>
+  sf::st_read(system.file("shapes/world.gpkg", package="spData")) |>
+  dplyr::filter(continent == "South America")
+```
+
+```{r}
+# Old code.
+
+# sa_shape |> sf::st_crs()
+# sa_shape <- sa_shape |> sf::st_transform("EPSG:4326")
+```
+
+```{r}
+shape_bbox <-
+  sa_shape |>
+  magrittr::extract2("geom") |>
+  sf::st_bbox()
+
+shape_bbox
+```
+
+```{r}
+in_crs <- terra::crs(sa_shape)
+```
+
+```{r}
+if (resolution == "250m") {
+  rstFile <- paste0(
+    "/vsicurl/https://files.isric.org/soilgrids/latest/data/",
+    voi,
+    "/",
+    voi_layer,
+    ".vrt"
+  )
+} else if (resolution == "1000m") {
+  rstFile <- paste0(
+    "/vsicurl/https://files.isric.org/soilgrids/latest/data_aggregated/1000m/",
+    voi,
+    "/",
+    voi_layer,
+    "_1000.tif"
+  )
+} else {
+  rstFile <- paste0(
+    "/vsicurl/https://files.isric.org/soilgrids/latest/data_aggregated/5000m/",
+    voi,
+    "/",
+    voi_layer,
+    "_5000.tif"
+  )
+}
+```
+
+```{r}
+ras <- terra::rast(rstFile)
+
+# Assign crs as the ESRI code rather than proj string.
+terra::crs(ras) <- ras_crs
+```
+
+```{r}
+# ras <- raster::raster(rstFile)
+```
+
+```{r}
+# Project bounding box to same CRS as raster layer.
+bb_proj <- terra::project(
+  x = terra::ext(sa_shape),
+  from = terra::crs(in_crs),
+  to = terra::crs(ras_crs)
+)
+```
+
+```{r}
+terra::window(ras) <- NULL # Remove any existing window.
+
+terra::window(ras) <- bb_proj # Get just ROI.
+```
+
+## Plotting the data
+
+```{r}
+#| eval: false
+#| include: false
+
+# terra::plot(ras) # Quick visual check.
+```
+
+```{r}
+#| warning: false
+
+ggplot2::ggplot() + 
+  tidyterra::geom_spatraster(data = ras) +
+  # ggplot2::scale_fill_distiller(
+  #   palette = "Greens", 
+  #   direction = 1,
+  #   na.value = NA
+  # ) +
+  viridis::scale_fill_viridis(
+    option = "D", 
+    direction = 1,
+    na.value = NA
+  ) +
+  ggplot2::theme(
+    axis.title.x = ggplot2::element_blank(),
+    axis.title.y = ggplot2::element_blank()
+  ) +
+  ggplot2::labs(fill = "")
+```
+
+## References {.smaller}
+
+::: {style="font-size: 0.75em;"}
+In accordance with the [American Psychological Association (APA) Style](https://apastyle.apa.org/), 7th edition.
+:::
+
+::: {#refs style="font-size: 0.75em;"}
+:::

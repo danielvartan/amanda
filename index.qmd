@@ -8,50 +8,138 @@ source(here::here("R/quarto-setup.R"))
 ```
 
 :::: {.columns}
-::: {.column style="width: 70%;"}
+::: {.column style="width: 60%;"}
 In this presentation, we will delve into the insightful article by Silva et al. ([2024](https://doi.org/10.1007/s10113-024-02250-3)) titled: _Climate change may alter the availability of wild food plants in the Brazilian semiarid_.  This research opens up important discussions about the future of essential resources under the pressures of climate change.
 
 We will cover the following topics:
 
 1. **Introduction**
 1. **Methods**
-1. **Results**
-1. **Discussion**
-1. **Final remarks**
+1. **Results & Discussion**
+1. **Conclusion**
 :::
 
-::: {.column style="width: 30%;"}
-![](images/welcome-path.png){fig-align="center" style="width: 85%;"}
+::: {.column style="width: 40%; padding-top: 0px;"}
+![](images/melo-2019-cover-illustration.png){fig-align="center" style="width: 100%;"}
 :::
 ::::
+
+::: footer
+[Artwork by @melo2019]
+:::
 
 ::: {.notes}
 1. **Introduction**
 1. **Methods**
 1. **Results**
 1. **Discussion**
-1. **Final remarks**
 :::
 
-## {visibility="uncounted" data-menu-title="Article" background-image="images/silva-2024-print.png" background-position="top left" background-size="100%" .scrollable}
+## {visibility="uncounted" data-menu-title="The article" background-image="images/silva-2024-print-1.png" background-position="top left" background-size="100%" .scrollable}
 
 ::: {.notes}
 URL: https://link.springer.com/article/10.1007/s10113-024-02250-3
-
-<!-- @silva2024 -->
-<!-- @silva2024b -->
 :::
 
-## {visibility="uncounted" data-menu-title="Article" background-image="images/silva-2024-10-18-lattes.png" background-position="top left" background-size="100%" .scrollable}
+## {visibility="uncounted" data-menu-title="The journal" background-image="images/silva-2024-print-2.png" background-position="top left" background-size="100%" .scrollable}
 
 ::: {.notes}
-URL: http://lattes.cnpq.br/8997021071561903
+URL: https://link.springer.com/journal/10113
+
+The goal of Regional Environmental Change is to publish scientific research and opinion papers that **improve our understanding of the extent of these changes, their causes, their impacts on people, and the options for society to respond**. "Regional" refers to the full range of scales between local and global, including regions defined by natural criteria, such as watersheds and ecosystems, and those defined by human activities, such as urban areas and their hinterlands.
+
+Qualis Periódicos 2017-2020: [A2](https://sucupira-legado.capes.gov.br/sucupira/public/consultas/coleta/veiculoPublicacaoQualis/listaConsultaGeralPeriodicos.jsf) (Biodiversidade+)
+
+JCR 2023: [3.4](https://jcr.clarivate.com/jcr-jp/journal-profile?journal=REG%20ENVIRON%20CHANGE&year=2023&fromPage=%2Fjcr%2Fhome)
+
+SJR 2023: [1.032](https://www.scimagojr.com/journalsearch.php?q=144969&tip=sid&clean=0)
+:::
+
+## The authors {.smaller}
+
+::::: {.columns}
+:::: {.column style="width: 33%; padding-top: 0px;"}
+::: {style="font-weight: bold; font-size: 0.9em; text-align: center;"}
+[Amanda S. S. da Silva]{style="color: #006909;"} ![](images/brazil-flag-icon-128.png){style="height: 0.9em; margin: 0!important;"}
+:::
+
+![](images/silva-photo-1-squared.jpg){fig-align="center" style="width: 100%; padding-top: 0px;"}
+
+::: {style="font-size: 0.8em; position: relative; top: -25px;"}
+- [Lattes](http://lattes.cnpq.br/8997021071561903){title="Brazil's academic curriculum database"}
+- [UFPB](https://www.ufpb.br){title="Universidade Federal da Paraíba (Undergraduate)"}, [UFRN](https://www.ufrn.br){title="Universidade Federal do Rio Grande do Norte (Master's)"}, [UFRPE](https://www.ufrpe.br){fig-alt="Universidade Federal Rural de Pernambuco (PhD)"}
+- [LECEB/CECA/UFAL](https://www.instagram.com/lecebufal/){title="Laboratório de Ecologia, Conservação e Evolução Biocultural (LECEB) | Campus de Engenharias e Ciências Agrárias (CECA) | Universidade Federal de Alagoas (UFAL)"}
+- [PPGEtno](https://www.pgetno.ufrpe.br){title="Programa de Pós-graduação em Etnobiologia e Conservação da Natureza"}
+:::
+::::
+:::: {.column style="width: 33%; padding-top: 0px;"}
+::: {style="font-weight: bold; font-size: 0.9em; text-align: center;"}
+[Xavier Arnan Viadiu]{style="color: #006909;"} ![](images/spain-flag-icon-128.png){style="height: 0.9em; margin: 0!important;"}
+:::
+
+![](images/viadiu-photo-1-squared.jpg){fig-align="center" style="width: 100%; padding-top: 0px;"}
+
+::: {style="font-size: 0.8em; position: relative; top: -25px;"}
+- [Lattes](http://lattes.cnpq.br/0204772340851287){title="Brazil's academic curriculum database"}
+- [UPE](https://www.upe.br){title="Universidade de Pernambuco"}
+- [LECEB/CECA/UFAL](https://www.instagram.com/lecebufal/){title="Laboratório de Ecologia, Conservação e Evolução Biocultural (LECEB) | Campus de Engenharias e Ciências Agrárias (CECA) | Universidade Federal de Alagoas (UFAL)"}
+- [PPGEtno](https://www.pgetno.ufrpe.br){title="Programa de Pós-graduação em Etnobiologia e Conservação da Natureza"}
+:::
+::::
+:::: {.column style="width: 34%; padding-top: 0px;"}
+::: {style="font-weight: bold; font-size: 0.9em; text-align: center;"}
+[Patrícia M. de Medeiros]{style="font-weight: bold; text-align: center; color: #006909;"} ![](images/brazil-flag-icon-128.png){style="height: 0.9em; margin: 0!important;"}
+:::
+
+![](images/medeiros-photo-1-squared.jpg){fig-align="center" style="width: 100%; padding-top: 0px;"}
+
+::: {style="font-size: 0.8em; position: relative; top: -25px;"}
+- [Lattes](http://lattes.cnpq.br/3450009941162428){title="Brazil's academic curriculum database"}
+- [UFAL](https://ufal.br){title="Universidade Federal de Alagoas"}
+- [LECEB/CECA/UFAL](https://www.instagram.com/lecebufal/){title="Laboratório de Ecologia, Conservação e Evolução Biocultural (LECEB) | Campus de Engenharias e Ciências Agrárias (CECA) | Universidade Federal de Alagoas (UFAL)"}
+- [PPGEtno](https://www.pgetno.ufrpe.br){title="Programa de Pós-graduação em Etnobiologia e Conservação da Natureza"}
+:::
+::::
+:::::
+
+::: footer
+(Photos provided by the authors in their [CNPQ's Lattes curricula](https://lattes.cnpq.br/))
+:::
+
+::: {.notes}
+[Amanda Stefanie Sérgio da Silva](http://lattes.cnpq.br/8997021071561903)
+
+[Xavier Arnan Viadiu](http://lattes.cnpq.br/0204772340851287)
+
+[Patrícia Muniz de Medeiros](http://lattes.cnpq.br/3450009941162428)
 :::
 
 
 # Introduction
 
 ::: {.notes}
+:::
+
+## Question
+
+::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ed6b4d; padding-top: 125px;"}
+What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?
+:::
+
+::: footer
+[@silva2024]
+:::
+
+::: {.notes}
+*Qual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?*
+
+This study aimed to **estimate the future availability** of nutritionally and economically important WFP species in the Brazilian semiarid and **determine their spatiotemporal variation in future scenarios of climate change**.
+
+Here, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios [@silva2024].
+
+The effects of climate change on productive activities may lead to reductions in global agricultural production and, consequently, **food availability** (Zhu et al. 2022) [@silva2024].
+
+*Plant communities may become more homogeneous or heterogeneous* in terms of spatial distribution, owing to changes in the average size of distribution areas through the expansion or contraction of geographical ranges and the extinction or introduction of species with restricted distribution (Ochoa-Ochoa et al. 2012; Lima et al. 2019) [@silva2024].
 :::
 
 ## Wild food plants {.smaller}
@@ -62,13 +150,15 @@ Wild food plants (WFPs) are defined as **plant species that grow spontaneously i
 
 <br>
 
+::: {style="font-size: 0.8em; font-style: italic;"}
 **A** [Goiaba-do-morro](https://identify.plantnet.org/pt-br/k-world-flora/species/Psidium%20guineense%20Sw./data) (*Psidium guineense*).
 
 **B** [Jenipapo](https://identify.plantnet.org/pt-br/k-world-flora/species/Genipa%20americana%20L./data) (*American genipa*).
 
-**C** [Taioba/Costela-de-adão/Orelha-de-elefante](https://pt.wikipedia.org/wiki/Xanthosoma_sagittifolium) (*Xanthosoma sagittifolium*).
+**C** [Taioba/Costela-de-adão/Orelha-de-elefante](https://identify.plantnet.org/pt-br/k-world-flora/species/Xanthosoma%20sagittifolium%20(L.)%20Schott/data) (*Xanthosoma sagittifolium*).
 
-**D** [Cará-branco](https://identify.plantnet.org/pt-br/k-world-flora/species/Xanthosoma%20sagittifolium%20(L.)%20Schott/data) (*Dioscorea trifida*). 
+**D** [Cará-roxo](https://identify.plantnet.org/pt-br/k-world-flora/species/Dioscorea%20trifida%20L.f./data) (*Dioscorea trifida*).
+:::
 :::
 
 ::: {.column style="width: 50%; padding-top: 0px;"}
@@ -81,10 +171,18 @@ Wild food plants (WFPs) are defined as **plant species that grow spontaneously i
 :::
 
 ::: {.notes}
+*Plantas Silvestres Comestíveis (PSC)* or *Plantas Alimentícias Silvestres (PAS)*. 
+
+Rich in nutrients.
+
+Contributes to the diversification of food.
+
+Serve as genetic resources for closely related crop species in breeding programs.
+
 *Fig 3.* Wild food plants with greater potential for popularization, considering the average of the attributes accessed according to the perception of the residents of the rural settlement Dom Helder Câmara, in the municipality of Murici, state of Alagoas, northeastern Brazil. (**A**) *Psidium guineense* Sw.; (**B**) *American genipa* L.; (**C**) *Xanthosoma sagittifolium* (L.) Schott, and (**D**) *Dioscorea trifida* L.f. [@medeiros2021].
 :::
 
-## The Brazilian semiarid {.smaller}
+## The Brazilian semiarid
 
 ![](images/silva-2024-figure-1.png){fig-align="center" style="padding-top: 10px; padding-bottom: 30px"}
 
@@ -93,9 +191,11 @@ Wild food plants (WFPs) are defined as **plant species that grow spontaneously i
 :::
 
 ::: {.notes}
-**Fig. 1** Geographic location of the Brazilian semiarid region in the Neotropical realm, with limits highlighted in black on a phytogeographic map. The relative area (%) represents the proportion of each domain in relation to the total area of the semiarid region. Sources: Brazilian Institute of Geography and Statistics, Biomes of Brazil, 1:250,000, 2019, Development Superintendency of the North- east (SUDENE), Delimitation of the Semiarid, 2017 [@silva2024].
+The Caatinga is the only phytogeographic domain exclusive to Brazil.
 
 A more precise definition is given by the Köppen climate classification, which treats steppe climates (BSh and BSk) as **intermediates between desert climates (BW) and humid climates** (A, C, D) in ecological characteristics and agricultural potential <https://en.wikipedia.org/wiki/Semi-arid_climate>.
+
+**Fig. 1** Geographic location of the Brazilian semiarid region in the Neotropical realm, with limits highlighted in black on a phytogeographic map. The relative area (%) represents the proportion of each domain in relation to the total area of the semiarid region. Sources: Brazilian Institute of Geography and Statistics, Biomes of Brazil, 1:250,000, 2019, Development Superintendency of the North- east (SUDENE), Delimitation of the Semiarid, 2017 [@silva2024].
 :::
 
 ## Shared Socioeconomic Pathways {.smaller}
@@ -128,6 +228,8 @@ The SSPs are based on **five narratives** describing alternative socio-economic 
 :::
 
 ::: {.notes}
+*Caminhos socioeconômicos compartilhados*.
+
 - Color palette 1: [Viridis Inferno (8 categories)](https://waldyrious.net/viridis-palette-generator/).
 
 - Color palette 2: [Our World in Data](https://ourworldindata.org/explorers/ipcc-scenarios?hideControls=true&Metric=Temperature+increase&Rate=Per+capita&Region=Global&country=SSP1+-+Baseline~SSP2+-+Baseline~SSP3+-+Baseline~SSP4+-+Baseline~SSP5+-+Baseline).
@@ -145,46 +247,387 @@ The SSPs are based on **five narratives** describing alternative socio-economic 
 See also @ipcc2021[p. 571, fig. 4.2].
 :::
 
-## Climate change and WFPs {.smaller}
+## Shared Socioeconomic Pathways
 
-Climate change (CC) pose risks to human health and well-being and can have serious consequences for food production worldwide.
-
-Climate change poses a significant threat to the Brazilian semiarid.
-
-[...] the region has a high diversity of WFPs that are extracted by local populations for economic and nutritional purposes.
-
-Given these characteristics, the Brazilian semiarid serves as a model region for assessing WFP availability in the context of climate change.
-
-![](images/meme-this-is-fine.gif){fig-align="center" style="width: 100%; padding-top: 10px; padding-bottom: 25px;"}
+![](images/nazarenko-2022-figure-10.png){fig-align="center" style="padding-top: 25px; padding-bottom: 50px"}
 
 ::: footer
-[@silva2024]
+[Artwork by @nazarenko2022]
 :::
 
 ::: {.notes}
-:::
-
-## Question
-
-**[What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?]{style="color: #006909;"}**
-
-This study aimed to **estimate the future availability** of nutritionally and economically important WFP species in the Brazilian semiarid and **determine their spatiotemporal variation in future scenarios of climate change**.
-
-::: footer
-[@silva2024]
-:::
-
-::: {.notes}
-Here, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios [@silva2024].
+**Figure 10**. Surface air temperature differences (°C) for late 21st century 2081–2100. Minus 1995–2014 of the corresponding historical ensemble member for the non-interactive climate model. (a) SSP1-2.6; (b) SSP2-4.5; (c) SSP4-6.0; (d) SSP5-8.5. [@nazarenko2022].
 :::
 
 
 # Methods
 
+## Selection and identification of species {.smaller}
+
+:::: {.columns}
+::: {.column style="width: 66%; padding-top: 0px;"}
+**Sources**:
+
+1. [IBGE Agricultural Census](https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria/21814-2017-censo-agropecuario.html): "plant extraction”, “semiarid”, and “family farming” [@ibge2022c].
+2. Plants with potential for human consumption as food [@jacob2020] (systematic review).
+
+All species that were cited by three or more articles present in @jacob2020. **11 species in the first database and 17 species in the second**.
+
+All **27 selected species** are native to Brazil, 11 are endemic to Brazil, and 3 are endemic to Brazil and restricted to Caatinga.
+:::
+::: {.column style="width: 34%; padding-top: 50px;"}
+![](images/ibge-agricultural-census-2017.png){fig-align="center" style="width: 80%"}
+:::
+::::
+
+::: footer
+(Logo from the [2017 IBGE Agricultural Census](https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria/21814-2017-censo-agropecuario.html))
+:::
+
 ::: {.notes}
 :::
 
-# Results
+## Selection of occurrence records {.smaller}
+
+:::: {.columns}
+::: {.column style="width: 60%; padding-top: 0px;"}
+![](images/gbif-logo.png){style="width: 25%;"}
+
+Occurrence records of the species in the **Global Biodiversity Information Facility** ([GBIF](https://doi.org/10.15468/dl.vaaeuh)) database.
+
+Selected records with geographical coordinates and dates from 1970 to 2021 (collected in January 2022), to coincide with the period of the bioclimatic variables [@silva2024].
+
+<br>
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Distribution of the wild food plant (WFP) species studied in the Brazilian semiarid region [@silva2024].
+:::
+:::
+::: {.column style="width: 40%; padding-top: 25px;"}
+![](images/vartanian-2024-figure-1.png){fig-align="center" style="width: 100%"}
+:::
+::::
+
+::: footer
+(Artwork by [Daniel Vartanian](https://linktr.ee/danielvartan))
+:::
+
+::: {.notes}
+:::
+
+## Selection of env. predictor variables {.smaller}
+
+:::: {.columns}
+::: {.column style="width: 60%; font-size: 0.95em; padding-top: 0px;"}
+![](images/worldclim-logo.png){style="width: 45%;"}
+
+Climate data from the [WorldClim 2.1](https://worldclim.org/) database, which compiles interpolated data from weather stations worldwide [@fick2017; @harris2020].
+
+Future projections are informed by multiple climate models and various SSPs, providing data at several spatial resolutions for a detailed representation of climate variables.
+
+<br>
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Projected monthly average maximum temperatures (°C) for June 2021–2040, based on the global climate model (GCM) ACCESS-CM2.
+:::
+:::
+::: {.column style="width: 40%; padding-top: 30px;"}
+![](images/vartanian-2024-figure-2.png){fig-align="center" style="width: 100%"}
+:::
+::::
+
+::: footer
+(Artwork by [Daniel Vartanian](https://linktr.ee/danielvartan))
+:::
+
+::: {.notes}
+**Dataseries**:
+
+1. Historical climate data (1970–2000).
+2. Historical monthly weather data (1960-2018): Downscaled data from [CRU-TS-4.06](https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/).
+3. Future climate data (2041–2060) under four SSPs (SSP1 (2.6), SSP2 (4.5), SSP3 (7.0), and SSP5 (8.5)): includes downscaled climate projections from [CMIP6](https://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip6) models.
+:::
+
+## Selection of env. predictor variables {.smaller}
+
+:::: {.columns}
+::: {.column style="width: 60%; font-size: 0.95em; padding-top: 0px;"}
+![](images/soilgrids-logo.png){style="width: 35%;"}
+
+Soil data from the [SoilGrids](https://www.isric.org/explore/soilgrids) database, which is based on a global compilation of soil profile data ([WoSIS](https://www.isric.org/explore/wosis)) and environmental layers.
+
+It takes as inputs soil observations from about 240,000 locations worldwide and over 400 global environmental covariates describing vegetation, terrain morphology, climate, geology and hydrology [@poggio2021].
+
+<br>
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Soil total nitrogen concentration (in cg/kg) at a depth of 0-5 cm for each 5000 m cell, based on the [latest release](https://www.isric.org/explore/soilgrids#:~:text=The%20latest%C2%A0release%20of%C2%A0SoilGrids%20(May%202020)%20can%20be%20accessed%20through%20the%20following%20services%3A) of the SoilGrids database (May 2020).
+:::
+:::
+::: {.column style="width: 40%; padding-top: 50px;"}
+![](images/vartanian-2024-figure-3.png){fig-align="center" style="width: 100%"}
+:::
+::::
+
+::: footer
+(Artwork by [Daniel Vartanian](https://linktr.ee/danielvartan))
+:::
+
+::: {.notes}
+11 soil property variables, 10 at four depths (0–5, 5–15, 15–30, and 30–60 cm), and 1 at a single depth (0–30 cm).
+
+Variable examples: Total nitrogen (N); Soil pH;	Proportion of clay particles; Proportion of sand particles; Organic carbon density.
+
+See:
+
+- https://www.isric.org/explore/soilgrids
+- https://data.isric.org/geonetwork/srv/por/catalog.search#/metadata/6d86f10a-d898-4ba9-b41d-b11c767dde8b
+- https://soilgrids.org
+- https://www.isric.org/explore/soilgrids/faq-soilgrids
+- https://www.isric.org/explore/soilgrids/soilgrids-access
+:::
+
+## Bioclimatic variables {.smaller}
+
+::: {style="font-size: 0.9em"}
+[Bioclimatic variables](https://www.worldclim.org/data/bioclim.html) are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques [@worldclim].
+:::
+
+:::: {.columns}
+::: {.column style="width: 50%; padding-top: 0px;"}
+![](images/magalhaes-2024-figure-1.png){style="width: 100%"}
+:::
+::: {.column style="width: 50%; padding-top: 0px;"}
+![](images/magalhaes-2024-figure-2.png){style="width: 100%"}
+:::
+::::
+
+::: footer
+(Artwork by [Arthur Ramalho Magalhães](https://scholar.google.com.br/citations?user=qsFGkA0AAAAJ&hl=en))
+:::
+
+::: {.notes}
+Bioclimatic variables are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques. The bioclimatic variables represent annual trends (e.g., mean annual temperature, annual precipitation) seasonality (e.g., annual range in temperature and precipitation) and extreme or limiting environmental factors (e.g., temperature of the coldest and warmest month, and precipitation of the wet and dry quarters). A quarter is a period of three months (1/4 of the year).
+
+See: https://www.worldclim.org/data/bioclim.html
+:::
+
+## Habitat suitability modeling
+
+:::: {.columns}
+::: {.column style="width: 50%; padding-top: 0px;"}
+**Response variable** (Occurrences of plant species) $+$ **Predictor variables** (Bioclimatic and soil variables) $=$ **Suitability map**
+
+<br>
+
+80% training & 20% testing
+:::
+::: {.column style="width: 50%; padding-top: 75px;"}
+![](images/silva-2024-sup-figure-3.png){fig-align="center" style="width: 100%"}
+:::
+::::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Habitat suitability modeling
+
+[Maxent](https://biodiversityinformatics.amnh.org/open_source/maxent/) (Maximum entropy) is an application for modelling species geographic distributions.
+
+::: {style="padding-top: 15px; padding-bottom: 15px;"}
+**Data on occurrence** $+$ **Environmental variables** $+$ **Random background points** $=$ **Predict where a species is likely to be found**
+:::
+
+**Result**: A probability map, where each location on the map is assigned a value that indicates the likelihood of the species living there.
+
+::: {.notes}
+:::
+
+## Habitat suitability modeling {.smaller}
+
+The Maxent algorithm compares the environmental conditions at **presence points** with **background points** and tries to identify a pattern.
+
+![](images/magalhaes-2024-figure-3.png){fig-align="center" style="padding-top: 10px; padding-bottom: 25px"}
+
+::: footer
+(Artwork by [Arthur Ramalho Magalhães](https://scholar.google.com.br/citations?user=qsFGkA0AAAAJ&hl=en))
+:::
+
+::: {.notes}
+:::
+
+## Habitat suitability modeling {.smaller}
+
+:::: {.columns}
+::: {.column style="width: 50%; padding-top: 0px;"}
+As a result, a map is obtained showing the probabilities of that species occurring in that location.
+
+With the model ready, the **[test 20%]{style="color: #ed6b4d;"}** can be used to evaluate the model.
+
+This evaluation allows for the selection of the best models.
+
+<br>
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Habitat suitability map for Annona crassiflora (Marolo/Pinha-do-cerrado). Suitability surfaces are presented within the known extent of occurrence (EOO) and clipped by the Semiarid region. Blank areas represent locations where species have no known occurrence (extend beyond the EOO).
+:::
+:::
+::: {.column style="width: 50%; padding-top: 0px;"}
+![](images/silva-2024-sup-figure-4.png){fig-align="center" style="padding-top: 25px;"}
+:::
+::::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Habitat suitability modeling {.smaller}
+
+After the model was generated, it was projected into the future under different scenarios.
+
+Projections of the predictor variables for the future.
+
+![](images/silva-2024-sup-figure-8.png){fig-align="center" style="width: 100%; padding-top: 35px; padding-bottom: 35px"}
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Bioclimatic variables of temperature and precipitation in Brazilian Semiarid for the current scenario (on a yellow-green scale). Variation in bioclimatic variables of temperature and precipitation in semiarid region for the four future climate change projections (on a red-white-blue scale).
+:::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Habitat suitability modeling {.smaller}
+
+Projections of the predictor variables for the future.
+
+![](images/silva-2024-sup-figure-5.png){fig-align="center" style="width: 100%; padding-top: 75px; padding-bottom: 75px"}
+
+::: {style="font-size: 0.8em; font-style: italic;"}
+Annual precipitation in the Brazilian Semiarid region for the current scenario (represented on a yellow-green scale) and the same but across four future climate change projections (represented on a red-white-blue scale).
+:::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Geographical distribution {.smaller}
+
+Based on the optimal sensitivity and specificity ― Threshold that best defines the 'presence' area (**Binarization**).
+
+After that, the relative loss (RG) and relative gain (RL) of potential area were calculated.
+
+![](images/magalhaes-2024-figure-4.png){fig-align="center" style="padding-top: 10px; padding-bottom: 25px"}
+
+::: footer
+(Artwork by [Arthur Ramalho Magalhães](https://scholar.google.com.br/citations?user=qsFGkA0AAAAJ&hl=en))
+:::
+
+::: {.notes}
+:::
+
+## Species richness and composition {.smaller}
+
+:::: {.columns}
+::: {.column style="width: 50%; padding-top: 0px;"}
+A **hexagonal grid** of 0.5 degrees (in red, ~55.6 km) is used for delineating communities.
+
+The gray map represents the spatial extent of the Brazilian Semiarid region. The blue dots represent the centroids of the hexagons.
+
+**Species number == Richness.**
+
+**Species identity == Composition.**
+
+Species composition per grid.
+:::
+::: {.column style="width: 50%; padding-top: 0px;"}
+![](images/silva-2024-sup-figure-6.png){fig-align="center"}
+:::
+::::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Species richness and composition {.smaller}
+
+The hex grid was superimposed on the geographical distribution polygons of each species, and species richness was estimated by the sum of the number of species found in each hexagon for each climate scenario (current and future).
+
+![](images/silva-2024-sup-figure-7.png){fig-align="center" style="padding-top: 25px; padding-bottom: 35px"}
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Species richness and composition {.smaller}
+
+The hex grid was superimposed on the geographical distribution polygons of each species, and species richness was estimated by the sum of the number of species found in each hexagon for each climate scenario (current and future).
+
+![](images/magalhaes-2024-figure-6.png){fig-align="center" style="padding-top: 10px; padding-bottom: 25px"}
+
+::: footer
+(Artwork by [Arthur Ramalho Magalhães](https://scholar.google.com.br/citations?user=qsFGkA0AAAAJ&hl=en), based on images extracted from @silva2024)
+:::
+
+::: {.notes}
+:::
+
+## Species richness and composition {.smaller}
+
+The hex grid was superimposed on the geographical distribution polygons of each species, and species richness was estimated by the sum of the number of species found in each hexagon for each climate scenario (current and future).
+
+![](images/silva-2024-sup-figure-9.png){fig-align="center" style="padding-top: 10px; padding-bottom: 25px"}
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+:::
+
+## Beta diversity {.smaller}
+
+:::: {.columns}
+::: {.column style="width: 50%; padding-top: 0px;"}
+**Spatial Beta Diversity** quantifies the difference in species composition between a focal cell and the **surrounding cells**.
+
+![](images/silva-2024-sup-figure-1.png){fig-align="center" style="width: 80%; padding-top: 50px;"}
+:::
+::: {.column style="width: 50%; padding-top: 0px;"}
+**Temporal Beta Diversity** quantifies the difference in species composition between a focal cell and **the same cell in a future scenario**.
+
+![](images/silva-2024-sup-figure-2.png){fig-align="center" style="width: 80%; padding-top: 12px;"}
+:::
+::::
+
+::: footer
+[Artwork by @silva2024]
+:::
+
+::: {.notes}
+**Fig. S6**. Representation of β diversity estimation in a grid. Spatial β diversity (A) was estimated by quantifying the average β diversity between each hexagon (focal cell in blue) and the six cells surrounding it (dashed blue line equivalent to a radius of 0.5 degrees, same resolution as the hexagon, ~55.6 km), for each climatic scenario (current and future). Temporal β diversity (B) was estimated by comparing the current species composition with the species composition in each future scenario (dashed blue line), considering the same hexagon (focal cell in blue). 
+:::
+
+# Results & Discussion
 
 ::: {.notes}
 :::
@@ -200,6 +643,10 @@ Here, our objective was to determine the spatiotemporal dynamics of WFPs in the 
 ::: {.notes}
 **Fig. 2** Relative balance in the geographical distribution area of wild food plants of the Brazilian semiarid in future climate change scenarios (2041–2060). 
 The relative balance (bars) indicates the balance between gain and loss in the distribution area of each species and is proportional to the current (1970–2000) distribution area. Boxplots show the median, quartiles, and standard error of the relative balance of all species ($n = 27$) in each future scenario; points represent outliers (*Dipteryx alata Vogel*). Nega- tive values indicate a reduction in distribution area, and positive values indicate an increase [@silva2024].
+
+**Effects of climate change (2041–2060)**: Suitable areas for most wild food plants (WFPs) in the Brazilian semiarid region will shrink.
+
+**Economic impact**: Species experiencing the greatest loss of suitable areas are important for local income, such as pequi, licuri, buriti, and mangaba, whose sales reached R$ 700.00 in 2016/2017.
 :::
 
 ## Species richness {.smaller}
@@ -212,6 +659,8 @@ The relative balance (bars) indicates the balance between gain and loss in the d
 
 ::: {.notes}
 **Fig. 3** Species richness and spatial beta diversity of wild food plants (hexagons) in the Brazilian semiarid. **a** Species richness in the cur- rent scenario (1970–2000) and in the four future climate change scenarios (2041–2060). **b** Variation of species richness in the four future climate change scenarios (2041–2060). **c** Spatial beta diversity in the current scenario (1970–2000) and in the four future climate change scenarios (2041–2060). Spatial beta diversity quantifies the difference in species composition between a focal cell and its surrounding cells (0.5° radius). **d** Variation of spatial beta diversity in the four future climate change scenarios (2041–2060). Boxplots show the median, quartiles, and standard error of the variation ($n = 430$) in each future scenario. Negative values indicate reductions (red) and positive values indicate increases (green) [@silva2024].
+
+Species number == richness. Species identity == composition.
 :::
 
 ## Spatial beta diversity {.smaller}
@@ -263,22 +712,19 @@ The relative balance (bars) indicates the balance between gain and loss in the d
 :::
 
 
-# Discussion
+# Conclusion
 
-::: {.notes}
+## Conclusion
+
+The species with the highest projected losses in climatically suitable areas were those that contribute substantially to the income of local populations.
+
+Some species will expand their range, being more tolerant to global changes, and can be used to replace this loss of food species.
+
+In addition to climate change, other threats can contrib- ute to reductions in the geographical distribution of species, such as changes in land use and unsustainable extraction.
+
+::: footer
+[@silva2024]
 :::
-
-
-# Final remarks
-
-::: {.notes}
-:::
-
-## Summary of key takeaways {.smaller}
-
-Wild food plants (WFPs) are important components of the diet and a source of income for local communities in semiarid regions, given that these populations are commonly characterized by high socioeconomic vulnerability and dependence on natural resources for subsistence.
-
-Climate change-induced redistribution of species can alter the diversity and composition of plant communities. The findings showed that the projected retractions of climatically suitable areas for WFPs in future scenarios may cause a reduction in local species richness and an increase in community heterogeneity (higher beta diversity) compared with the current scenario.
 
 ::: {.notes}
 :::
@@ -347,6 +793,17 @@ In accordance with the [American Psychological Association (APA) Style](https://
 
 ::: footer
 ([Copernicus Interactive Climate Atlas](https://atlas.climate.copernicus.eu/atlas/sCnNv9vG))
+:::
+
+::: {.notes}
+:::
+
+## (AP) Average temprature anomaly {.smaller visibility="uncounted"}
+
+<iframe src="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart" loading="lazy" style="width: 100%; height: 575px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+::: footer
+(Artwork by [Our World in Data using](https://ourworldindata.org/grapher/temperature-anomaly) using data from @morice2021)
 :::
 
 ::: {.notes}

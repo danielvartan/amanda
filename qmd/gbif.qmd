@@ -1,0 +1,267 @@
+---
+title: "Global Biodiversity Information Facility"
+format: html
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+source(here::here("R/quarto-setup.R"))
+```
+
+## Overview
+
+This document provides a mean to download, import and plot the biodiversity data used in @silva2024.
+
+## Setting things up
+
+```{r}
+#| eval: false
+
+library(brio)
+library(dplyr)
+library(ggplot2)
+library(geobr)
+library(ggfx)
+library(httr2)
+library(magrittr)
+library(readr)
+library(sf)
+```
+
+## Downloading the data
+
+Dataset DOI: [10.15468/dl.vaaeuh](https://doi.org/10.15468/dl.vaaeuh).
+
+See the [GBIF API](https://techdocs.gbif.org/en/openapi/) for more information.
+
+```{r}
+#| eval: false
+#| include: false
+
+# Bugged API...
+
+req <- 
+  "https://api.gbif.org" |>
+  httr2::request() |>
+  httr2::req_url_path_append("v1") |>
+  httr2::req_url_path_append("dataset") |>
+  httr2::req_url_path_append("doi") |>
+  httr2::req_url_path_append("10.15468") |>
+  httr2::req_url_path_append("dl.vaaeuh")
+  httr2::req_url_query(limit = 20) |>
+  httr2::req_url_query(offset = 40)
+
+req
+```
+
+```{r}
+dataset_key <- "0051234-240314170635999"
+
+req <- 
+  "https://api.gbif.org" |>
+  httr2::request() |>
+  httr2::req_url_path_append("v1") |>
+  httr2::req_url_path_append("occurrence") |>
+  httr2::req_url_path_append("download") |>
+  httr2::req_url_path_append("request") |>
+  httr2::req_url_path_append(dataset_key)
+  # httr2::req_url_path_append(paste0(dataset_key, ".zip"))
+
+req
+```
+
+```{r}
+resp <- req |> httr2::req_perform()
+
+resp
+```
+
+```{r}
+file <- tempfile(fileext = ".zip")
+
+resp |>
+  httr2::resp_body_raw() |>
+  brio::write_file_raw(path = file)
+```
+
+## Importing the data
+
+```{r}
+#| output: false
+
+data <- 
+  file |>
+  utils::unzip(exdir = tempdir()) |>
+  readr::read_delim(delim = "\t")
+```
+
+```{r}
+data |> dplyr::glimpse()
+```
+
+## Plotting the data
+
+```{r}
+#| output: false
+
+brazil <- geobr::read_country()
+```
+
+```{r}
+data |>
+  dplyr::filter(countryCode == "BR") |>
+  ggplot2::ggplot(
+    ggplot2::aes(
+      x = decimalLongitude, 
+      y = decimalLatitude,
+      color = species
+    )
+  ) + 
+  ggplot2::geom_sf(data = brazil, color = NA, fill = "gray", inherit.aes = FALSE) +
+  ggplot2::geom_point(size = 0.75, alpha = 0.75) +
+  viridis::scale_color_viridis(discrete = TRUE) +
+  ggplot2::guides(color = "none") +
+  ggplot2::labs(x = "Longitude", y = "Latitude")
+```
+
+```{r}
+data |>
+  dplyr::filter(
+    countryCode == "BR",
+    species == "Passiflora foetida"
+  ) |>
+  ggplot2::ggplot(
+    ggplot2::aes(
+      x = decimalLongitude, 
+      y = decimalLatitude
+    )
+  ) + 
+  ggplot2::geom_sf(data = brazil, color = NA, fill = "gray", inherit.aes = FALSE) +
+  ggplot2::geom_point(size = 0.75, color = viridis::viridis(1, begin = 0.25)) +
+  # ggplot2::guides(color = "none") +
+  ggplot2::labs(x = "Longitude", y = "Latitude")
+```
+
+```{r}
+#| output: false
+
+semiarid <- geobr::read_semiarid()
+```
+
+```{r}
+box <-
+  semiarid |>
+  magrittr::extract2("geom") |>
+  sf::st_bbox()
+
+box
+```
+
+```{r}
+#| output: false
+
+points <-
+  data |>
+  dplyr::filter(
+    decimalLongitude > box$xmin,
+    decimalLongitude < box$xmax,
+    decimalLatitude > box$ymin,
+    decimalLatitude < box$ymax,
+    countryCode == "BR"
+  ) |>
+  dplyr::select(decimalLongitude, decimalLatitude, species) |>
+  dplyr::rename(x = decimalLongitude, y = decimalLatitude) |>
+  sf::st_as_sf(coords = c("x", "y"), crs = sf::st_crs(semiarid))
+
+points <- 
+  points |>
+  dplyr::mutate(on_land = lengths(sf::st_within(points, semiarid))) |>
+  dplyr::filter(on_land == 1)
+
+points <- points |>
+  sf::st_coordinates() |>
+  dplyr::as_tibble() |>
+  dplyr::bind_cols(points) |>
+  dplyr::rename(longitude = X, latitude = Y)
+```
+
+```{r}
+points |>
+  ggplot2::ggplot(
+    ggplot2::aes(
+      x = longitude, 
+      y = latitude, 
+      color = species)
+  ) +
+  ggplot2::geom_sf(
+      data = semiarid, 
+      color = NA, 
+      fill = "gray", 
+      inherit.aes = FALSE
+  ) +
+  ggplot2::geom_point(size = 0.75, alpha = 0.75) +
+  viridis::scale_color_viridis(discrete = TRUE) +
+  ggplot2::labs(x = "Longitude", y = "Latitude") +
+  ggplot2::guides(color = "none") +
+  ggplot2::theme(
+    axis.title.x = ggplot2::element_blank(),
+    axis.title.y = ggplot2::element_blank()
+  )
+```
+
+```{r}
+#| eval: false
+#| include: false
+
+# A bad way to do a similar thing.
+
+data |>
+  dplyr::filter(
+    decimalLongitude > box$xmin,
+    decimalLongitude < box$xmax,
+    decimalLatitude > box$ymin,
+    decimalLatitude < box$ymax,
+    countryCode == "BR"
+  ) |>
+  ggplot2::ggplot(
+    ggplot2::aes(
+      x = decimalLongitude, 
+      y = decimalLatitude,
+      color = species
+    )
+  ) + 
+  ggplot2::geom_sf(
+      data = semiarid, 
+      color = NA, 
+      fill = "gray", 
+      inherit.aes = FALSE
+  ) +
+  ggfx::as_reference(
+    ggplot2::geom_sf(
+      data = semiarid, 
+      color = NA, 
+      fill = "gray", 
+      inherit.aes = FALSE
+    ),
+    id = "mask_layer"
+  ) +
+  ggfx::with_mask(
+    ggplot2::geom_point(size = 0.75),
+    mask = "mask_layer"
+  ) +
+  viridis::scale_color_viridis(discrete = TRUE) +
+  ggplot2::guides(color = "none") +
+  ggplot2::labs(x = "Longitude", y = "Latitude")
+```
+
+
+## References {.smaller}
+
+::: {style="font-size: 0.75em;"}
+In accordance with the [American Psychological Association (APA) Style](https://apastyle.apa.org/), 7th edition.
+:::
+
+::: {#refs style="font-size: 0.75em;"}
+:::
