@@ -123,7 +123,7 @@ SJR 2023: [1.032](https://www.scimagojr.com/journalsearch.php?q=144969&tip=sid&c
 ## Question
 
 ::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ed6b4d; padding-top: 125px;"}
-What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?
+What will be the future availability of nutritionally and economically important wild food plants species in the Brazilian semiarid?
 :::
 
 ::: {.notes}
@@ -178,7 +178,7 @@ Serve as genetic resources for closely related crop species in breeding programs
 *Fig 3.* Wild food plants with greater potential for popularization, considering the average of the attributes accessed according to the perception of the residents of the rural settlement Dom Helder Câmara, in the municipality of Murici, state of Alagoas, northeastern Brazil. (**A**) *Psidium guineense* Sw.; (**B**) *American genipa* L.; (**C**) *Xanthosoma sagittifolium* (L.) Schott, and (**D**) *Dioscorea trifida* L.f. [@medeiros2021].
 :::
 
-## The Brazilian semiarid
+## The Brazilian Semiarid
 
 ![](images/silva-2024-figure-1.png){fig-align="center" style="padding-top: 10px; padding-bottom: 30px"}
 
@@ -454,7 +454,7 @@ See: https://www.worldclim.org/data/bioclim.html
 
 <br>
 
-80% training & 20% testing
+80% training/20% testing
 :::
 ::: {.column style="width: 50%; padding-top: 75px;"}
 ![](images/silva-2024-sup-figure-3.png){fig-align="center" style="width: 100%"}
@@ -791,7 +791,7 @@ The nestedness component (ßnes) implies species loss or gain at only one of the
 ## Question
 
 ::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ed6b4d; padding-top: 125px;"}
-What will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?
+What will be the future availability of nutritionally and economically important wild food plants species in the Brazilian semiarid?
 :::
 
 ::: {.notes}

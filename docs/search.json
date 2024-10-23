@@ -32,7 +32,7 @@
     "href": "index.html#question",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Question",
-    "text": "Question\n\nWhat will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?\n\nQual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?\nThis study aimed to estimate the future availability of nutritionally and economically important WFP species in the Brazilian semiarid and determine their spatiotemporal variation in future scenarios of climate change.\nHere, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios (Silva et al., 2024).\nThe effects of climate change on productive activities may lead to reductions in global agricultural production and, consequently, food availability (Zhu et al. 2022) (Silva et al., 2024).\nPlant communities may become more homogeneous or heterogeneous in terms of spatial distribution, owing to changes in the average size of distribution areas through the expansion or contraction of geographical ranges and the extinction or introduction of species with restricted distribution (Ochoa-Ochoa et al. 2012; Lima et al. 2019) (Silva et al., 2024)."
+    "text": "Question\n\nWhat will be the future availability of nutritionally and economically important wild food plants species in the Brazilian semiarid?\n\nQual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?\nThis study aimed to estimate the future availability of nutritionally and economically important WFP species in the Brazilian semiarid and determine their spatiotemporal variation in future scenarios of climate change.\nHere, our objective was to determine the spatiotemporal dynamics of WFPs in the Brazilian semiarid and evaluate their potential availability in future climate change scenarios (Silva et al., 2024).\nThe effects of climate change on productive activities may lead to reductions in global agricultural production and, consequently, food availability (Zhu et al. 2022) (Silva et al., 2024).\nPlant communities may become more homogeneous or heterogeneous in terms of spatial distribution, owing to changes in the average size of distribution areas through the expansion or contraction of geographical ranges and the extinction or introduction of species with restricted distribution (Ochoa-Ochoa et al. 2012; Lima et al. 2019) (Silva et al., 2024)."
   },
   {
     "objectID": "index.html#wild-food-plants",
@@ -45,8 +45,8 @@
     "objectID": "index.html#the-brazilian-semiarid",
     "href": "index.html#the-brazilian-semiarid",
     "title": "Climate change and the availability of wild food plants in the semiarid",
-    "section": "The Brazilian semiarid",
-    "text": "The Brazilian semiarid\n\n\n(Artwork by Silva et al., 2024)\n\nThe Caatinga is the only phytogeographic domain exclusive to Brazil.\nA more precise definition is given by the Köppen climate classification, which treats steppe climates (BSh and BSk) as intermediates between desert climates (BW) and humid climates (A, C, D) in ecological characteristics and agricultural potential https://en.wikipedia.org/wiki/Semi-arid_climate.\nFig. 1 Geographic location of the Brazilian semiarid region in the Neotropical realm, with limits highlighted in black on a phytogeographic map. The relative area (%) represents the proportion of each domain in relation to the total area of the semiarid region. Sources: Brazilian Institute of Geography and Statistics, Biomes of Brazil, 1:250,000, 2019, Development Superintendency of the North- east (SUDENE), Delimitation of the Semiarid, 2017 (Silva et al., 2024)."
+    "section": "The Brazilian Semiarid",
+    "text": "The Brazilian Semiarid\n\n\n(Artwork by Silva et al., 2024)\n\nThe Caatinga is the only phytogeographic domain exclusive to Brazil.\nA more precise definition is given by the Köppen climate classification, which treats steppe climates (BSh and BSk) as intermediates between desert climates (BW) and humid climates (A, C, D) in ecological characteristics and agricultural potential https://en.wikipedia.org/wiki/Semi-arid_climate.\nFig. 1 Geographic location of the Brazilian semiarid region in the Neotropical realm, with limits highlighted in black on a phytogeographic map. The relative area (%) represents the proportion of each domain in relation to the total area of the semiarid region. Sources: Brazilian Institute of Geography and Statistics, Biomes of Brazil, 1:250,000, 2019, Development Superintendency of the North- east (SUDENE), Delimitation of the Semiarid, 2017 (Silva et al., 2024)."
   },
   {
     "objectID": "index.html#shared-socioeconomic-pathways",
@@ -109,7 +109,7 @@
     "href": "index.html#habitat-suitability-modeling",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Habitat suitability modeling",
-    "text": "Habitat suitability modeling\n\n\nResponse variable (Occurrences of plant species) \\(+\\) Predictor variables (Bioclimatic and soil variables) \\(=\\) Suitability map\n\n80% training & 20% testing\n\n\n\n\n\n\n\n(Artwork by Silva et al., 2024)"
+    "text": "Habitat suitability modeling\n\n\nResponse variable (Occurrences of plant species) \\(+\\) Predictor variables (Bioclimatic and soil variables) \\(=\\) Suitability map\n\n80% training/20% testing\n\n\n\n\n\n\n\n(Artwork by Silva et al., 2024)"
   },
   {
     "objectID": "index.html#habitat-suitability-modeling-1",
@@ -249,7 +249,7 @@
     "href": "index.html#question-1",
     "title": "Climate change and the availability of wild food plants in the semiarid",
     "section": "Question",
-    "text": "Question\n\nWhat will be the future availability of nutritionally and economically important WFP species in the Brazilian semiarid?\n\nQual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?"
+    "text": "Question\n\nWhat will be the future availability of nutritionally and economically important wild food plants species in the Brazilian semiarid?\n\nQual será a disponibilidade futura de espécies de plantas silvestres comestíveis, nutricional e economicamente importantes, no semiárido brasileiro?"
   },
   {
     "objectID": "index.html#conclusion-1",

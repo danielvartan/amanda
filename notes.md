@@ -55,7 +55,7 @@ Serve as genetic resources for closely related crop species in breeding programs
 
 *Fig 3.* Wild food plants with greater potential for popularization, considering the average of the attributes accessed according to the perception of the residents of the rural settlement Dom Helder Câmara, in the municipality of Murici, state of Alagoas, northeastern Brazil. (**A**) *Psidium guineense* Sw.; (**B**) *American genipa* L.; (**C**) *Xanthosoma sagittifolium* (L.) Schott, and (**D**) *Dioscorea trifida* L.f. [@medeiros2021].
 
-## The Brazilian semiarid [line 181]
+## The Brazilian Semiarid [line 181]
 
 The Caatinga is the only phytogeographic domain exclusive to Brazil.
 
